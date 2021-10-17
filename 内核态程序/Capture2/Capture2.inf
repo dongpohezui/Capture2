@@ -1,0 +1,62 @@
+;;;
+;;; Copyright (c) Microsoft Corporation. All rights reserved
+;;;
+;;; Abstract:
+;;;    Stream Edit Callout sample driver install configuration.
+;;;
+
+[Version]
+    Signature   = "$Windows NT$"
+    Class       = WFPCALLOUTS
+    ClassGuid   = {57465043-616C-6C6F-7574-5F636C617373}
+    Provider    = %Contoso%
+    DriverVer   = 01/01/2015,1.0.09.15
+
+[SourceDisksNames]
+   1 = %Capture2Disk%,,,""
+
+[SourceDisksFiles]
+   Capture2.sys = 1,,
+
+[DestinationDirs]
+    DefaultDestDir      = 12                              ; %WinDir%\System32\Drivers
+    Capture2.DriverFiles = 12                              ; %WinDir%\System32\Drivers
+
+[DefaultInstall]
+    OptionDesc = %Capture2ServiceDesc%
+    CopyFiles  = Capture2.DriverFiles
+    LegacyUninstall = 1
+[DefaultInstall.Services]
+    AddService = %Capture2ServiceName%,,Capture2.Service
+
+[DefaultUninstall]
+    DelFiles = Capture2.DriverFiles
+
+[DefaultUninstall.Services]
+    DelService = %Capture2ServiceName%,0x200               ; SPSVCINST_STOPSERVICE
+    DelReg     = Capture2.DelRegistry
+
+[Capture2.DriverFiles]
+    Capture2.sys,,,0x00000040                              ; COPYFLG_OVERWRITE_OLDER_ONLY
+
+[Capture2.Service]
+    DisplayName   = %Capture2ServiceName%
+    Description   = %Capture2ServiceDesc%
+    ServiceType   = 1                                     ; SERVICE_KERNEL_DRIVER
+    StartType     = 3                                     ; SERVICE_DEMAND_START
+    ErrorControl  = 1                                     ; SERVICE_ERROR_NORMAL
+    ServiceBinary = %12%\Capture2.sys                      ; %WinDir%\System32\Drivers\Capture2.sys
+    AddReg        = Capture2.AddRegistry
+
+[Capture2.AddRegistry]
+
+
+[Capture2.DelRegistry]
+    HKR,"Parameters",,,
+    
+
+[Strings]
+    Contoso            = "Contoso Ltd."
+    Capture2Disk        = "Capture2 Installation Disk"
+    Capture2ServiceDesc = "Capture2 Callout Driver"
+    Capture2ServiceName = "Capture2"

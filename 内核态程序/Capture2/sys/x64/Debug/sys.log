@@ -1,0 +1,1170 @@
+﻿  Building 'Capture2' with toolset 'WindowsKernelModeDriver10.0' and the 'Universal' target platform.
+  用于 x64 的 Microsoft (R) C/C++ 优化编译器 19.25.28611 版
+  版权所有(C) Microsoft Corporation。保留所有权利。
+  cl /c /Ix64\Debug\ /Zi /W1 /WX- /diagnostics:column /Od /Oi /Oy- /D NDIS60 /D _WIN64 /D _AMD64_ /D AMD64 /D DEPRECATE_DDK_FUNCTIONS=1 /D MSC_NOOPT /D _WIN32_WINNT=0x0A00 /D WINVER=0x0A00 /D WINNT=1 /D NTDDI_VERSION=0x0A000007 /D DBG=1 /D KMDF_VERSION_MAJOR=1 /D KMDF_VERSION_MINOR=15 /GF /Gm- /Zp8 /GS /guard:cf /Gy /fp:precise /Qspectre /Zc:wchar_t- /Zc:forScope /Zc:inline /GR- /Fo"x64\Debug\\" /Fd"x64\Debug\vc142.pdb" /Gz /wd4748 /wd4603 /wd4627 /wd4986 /wd4987 /wd4996 /FI"C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\shared\warning.h" /FC /errorReport:prompt /kernel -cbstring -d2epilogunwind /d1import_no_registry /d2AllowCompatibleILVersions /d2Zi+ iprules.c
+  iprules.c
+D:\文档\windows\wfp\Capture2\sys\iprules.c(112): warning C4715: “Capture2getIprules”: 不是所有的控件路径都返回值
+  Microsoft (R) Incremental Linker Version 14.25.28611.0
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  
+  "/OUT:D:\文档\windows\wfp\Capture2\x64\Debug\Capture2.sys" /VERBOSE "/VERSION:10.0" /INCREMENTAL:NO /WX "/SECTION:INIT,d" "C:\Program Files (x86)\Windows Kits\10\lib\10.0.18362.0\km\x64\NTOSKrnl.lib" "C:\Program Files (x86)\Windows Kits\10\lib\10.0.18362.0\km\x64\FwpKClnt.lib" "C:\Program Files (x86)\Windows Kits\10\lib\10.0.18362.0\km\x64\NetIO.lib" "C:\Program Files (x86)\Windows Kits\10\lib\10.0.18362.0\km\x64\NDIS.lib" "C:\Program Files (x86)\Windows Kits\10\lib\10.0.18362.0\km\x64\WDMSec.lib" "C:\Program Files (x86)\Windows Kits\10\lib\10.0.18362.0\um\x64\UUID.lib" "C:\Program Files (x86)\Windows Kits\10\lib\10.0.18362.0\km\x64\WDM.lib" "C:\Program Files (x86)\Windows Kits\10\lib\10.0.18362.0\km\x64\BufferOverflowFastFailK.lib" "C:\Program Files (x86)\Windows Kits\10\lib\10.0.18362.0\km\x64\ntoskrnl.lib" "C:\Program Files (x86)\Windows Kits\10\lib\10.0.18362.0\km\x64\hal.lib" "C:\Program Files (x86)\Windows Kits\10\lib\10.0.18362.0\km\x64\wmilib.lib" "C:\Program Files (x86)\Windows Kits\10\lib\wdf\kmdf\x64\1.15\WdfLdr.lib" "C:\Program Files (x86)\Windows Kits\10\lib\wdf\kmdf\x64\1.15\WdfDriverEntry.lib" /NODEFAULTLIB /MANIFEST:NO /DEBUG:FASTLINK "/PDB:D:\文档\windows\wfp\Capture2\x64\Debug\Capture2.pdb" "/SUBSYSTEM:NATIVE,10.00" /Driver /OPT:REF /OPT:ICF "/ENTRY:FxDriverEntry" /RELEASE "/IMPLIB:D:\文档\windows\wfp\Capture2\x64\Debug\Capture2.lib" "/MERGE:_TEXT=.text;_PAGE=PAGE" /MACHINE:X64 /PROFILE /guard:cf /kernel /IGNORE:4198,4010,4037,4039,4065,4070,4078,4087,4089,4221,4108,4088,4218,4218,4235 /osversion:10.0 /pdbcompress /debugtype:pdata x64\Debug\calloutFunctions.obj 
+  x64\Debug\Capture2.obj 
+  x64\Debug\io.obj 
+  x64\Debug\iprules.obj 
+  x64\Debug\registerCallouts.obj 
+  已处理 /NODEFAULTLIB(正在取消所有默认库)
+  
+  正在启动传递 1
+  
+  正在搜索库
+      正在搜索 C:\Program Files (x86)\Windows Kits\10\lib\10.0.18362.0\km\x64\NTOSKrnl.lib:
+        已找到 strcpy_s
+          已在 calloutFunctions.obj 中引用
+          已加载 NTOSKrnl.lib(ntoskrnl.exe)
+        已找到 DbgPrint
+          已在 calloutFunctions.obj 中引用
+          已在 Capture2.obj 中引用
+          已在 io.obj 中引用
+          已在 registerCallouts.obj 中引用
+          已加载 NTOSKrnl.lib(ntoskrnl.exe)
+        已找到 __imp_KeSetEvent
+          已在 calloutFunctions.obj 中引用
+          已加载 NTOSKrnl.lib(ntoskrnl.exe)
+        已找到 __imp_ExAllocatePoolWithTag
+          已在 calloutFunctions.obj 中引用
+          已在 iprules.obj 中引用
+          已加载 NTOSKrnl.lib(ntoskrnl.exe)
+        已找到 __imp_ExFreePoolWithTag
+          已在 calloutFunctions.obj 中引用
+          已在 io.obj 中引用
+          已在 iprules.obj 中引用
+          已加载 NTOSKrnl.lib(ntoskrnl.exe)
+        已找到 __imp_ExInterlockedInsertTailList
+          已在 calloutFunctions.obj 中引用
+          已在 iprules.obj 中引用
+          已加载 NTOSKrnl.lib(ntoskrnl.exe)
+        已找到 __imp_MmMapLockedPagesSpecifyCache
+          已在 calloutFunctions.obj 中引用
+          已加载 NTOSKrnl.lib(ntoskrnl.exe)
+        已找到 _vsnprintf
+          已在 calloutFunctions.obj 中引用
+          已加载 NTOSKrnl.lib(ntoskrnl.exe)
+        已找到 __imp_RtlInitUnicodeString
+          已在 Capture2.obj 中引用
+          已在 iprules.obj 中引用
+          已加载 NTOSKrnl.lib(ntoskrnl.exe)
+        已找到 __imp_KeInitializeSpinLock
+          已在 Capture2.obj 中引用
+          已加载 NTOSKrnl.lib(ntoskrnl.exe)
+        已找到 __guard_dispatch_icall_fptr
+          已在 Capture2.obj 中引用
+          已在 io.obj 中引用
+          已加载 NTOSKrnl.lib(guard_support.obj)
+        已找到 __imp_ExInterlockedRemoveHeadList
+          已在 io.obj 中引用
+          已在 iprules.obj 中引用
+          已加载 NTOSKrnl.lib(ntoskrnl.exe)
+        已找到 __imp_ObReferenceObjectByHandle
+          已在 io.obj 中引用
+          已加载 NTOSKrnl.lib(ntoskrnl.exe)
+        已找到 ExEventObjectType
+          已在 io.obj 中引用
+          已加载 NTOSKrnl.lib(ntoskrnl.exe)
+        已找到 __imp_ExAllocatePool
+          已在 iprules.obj 中引用
+          已加载 NTOSKrnl.lib(ntoskrnl.exe)
+        已找到 __imp_ZwClose
+          已在 iprules.obj 中引用
+          已加载 NTOSKrnl.lib(ntoskrnl.exe)
+        已找到 __imp_ZwOpenKey
+          已在 iprules.obj 中引用
+          已加载 NTOSKrnl.lib(ntoskrnl.exe)
+        已找到 __imp_ZwEnumerateValueKey
+          已在 iprules.obj 中引用
+          已加载 NTOSKrnl.lib(ntoskrnl.exe)
+        已找到 __imp_ZwQueryKey
+          已在 iprules.obj 中引用
+          已加载 NTOSKrnl.lib(ntoskrnl.exe)
+        已找到 __GSHandlerCheck
+          已在 registerCallouts.obj 中引用
+          已加载 NTOSKrnl.lib(gshandler.obj)
+        已找到 __IMPORT_DESCRIPTOR_ntoskrnl
+          已在 NTOSKrnl.lib(ntoskrnl.exe) 中引用
+          已在 NTOSKrnl.lib(ntoskrnl.exe) 中引用
+          已在 NTOSKrnl.lib(ntoskrnl.exe) 中引用
+          已在 NTOSKrnl.lib(ntoskrnl.exe) 中引用
+          已在 NTOSKrnl.lib(ntoskrnl.exe) 中引用
+          已在 NTOSKrnl.lib(ntoskrnl.exe) 中引用
+          已在 NTOSKrnl.lib(ntoskrnl.exe) 中引用
+          已在 NTOSKrnl.lib(ntoskrnl.exe) 中引用
+          已在 NTOSKrnl.lib(ntoskrnl.exe) 中引用
+          已在 NTOSKrnl.lib(ntoskrnl.exe) 中引用
+          已在 NTOSKrnl.lib(ntoskrnl.exe) 中引用
+          已在 NTOSKrnl.lib(ntoskrnl.exe) 中引用
+          已在 NTOSKrnl.lib(ntoskrnl.exe) 中引用
+          已在 NTOSKrnl.lib(ntoskrnl.exe) 中引用
+          已在 NTOSKrnl.lib(ntoskrnl.exe) 中引用
+          已在 NTOSKrnl.lib(ntoskrnl.exe) 中引用
+          已在 NTOSKrnl.lib(ntoskrnl.exe) 中引用
+          已在 NTOSKrnl.lib(ntoskrnl.exe) 中引用
+          已加载 NTOSKrnl.lib(ntoskrnl.exe)
+        已找到 _guard_dispatch_icall_nop
+          已在 NTOSKrnl.lib(guard_support.obj) 中引用
+          已加载 NTOSKrnl.lib(guard_dispatch.obj)
+        已找到 __NULL_IMPORT_DESCRIPTOR
+          已在 NTOSKrnl.lib(ntoskrnl.exe) 中引用
+          已加载 NTOSKrnl.lib(ntoskrnl.exe)
+        已找到 ntoskrnl_NULL_THUNK_DATA
+          已在 NTOSKrnl.lib(ntoskrnl.exe) 中引用
+          已加载 NTOSKrnl.lib(ntoskrnl.exe)
+      正在搜索 C:\Program Files (x86)\Windows Kits\10\lib\10.0.18362.0\km\x64\FwpKClnt.lib:
+        已找到 FwpsInjectionHandleDestroy0
+          已在 Capture2.obj 中引用
+          已加载 FwpKClnt.lib(fwpkclnt.sys)
+        已找到 FwpmEngineClose0
+          已在 Capture2.obj 中引用
+          已在 registerCallouts.obj 中引用
+          已加载 FwpKClnt.lib(fwpkclnt.sys)
+        已找到 FwpsCalloutRegister3
+          已在 registerCallouts.obj 中引用
+          已加载 FwpKClnt.lib(fwpkclnt.sys)
+        已找到 FwpsCalloutUnregisterById0
+          已在 registerCallouts.obj 中引用
+          已加载 FwpKClnt.lib(fwpkclnt.sys)
+        已找到 FwpmEngineOpen0
+          已在 registerCallouts.obj 中引用
+          已加载 FwpKClnt.lib(fwpkclnt.sys)
+        已找到 FwpmTransactionBegin0
+          已在 registerCallouts.obj 中引用
+          已加载 FwpKClnt.lib(fwpkclnt.sys)
+        已找到 FwpmTransactionCommit0
+          已在 registerCallouts.obj 中引用
+          已加载 FwpKClnt.lib(fwpkclnt.sys)
+        已找到 FwpmTransactionAbort0
+          已在 registerCallouts.obj 中引用
+          已加载 FwpKClnt.lib(fwpkclnt.sys)
+        已找到 FwpmCalloutAdd0
+          已在 registerCallouts.obj 中引用
+          已加载 FwpKClnt.lib(fwpkclnt.sys)
+        已找到 FwpmFilterAdd0
+          已在 registerCallouts.obj 中引用
+          已加载 FwpKClnt.lib(fwpkclnt.sys)
+        已找到 __IMPORT_DESCRIPTOR_fwpkclnt
+          已在 FwpKClnt.lib(fwpkclnt.sys) 中引用
+          已在 FwpKClnt.lib(fwpkclnt.sys) 中引用
+          已在 FwpKClnt.lib(fwpkclnt.sys) 中引用
+          已在 FwpKClnt.lib(fwpkclnt.sys) 中引用
+          已在 FwpKClnt.lib(fwpkclnt.sys) 中引用
+          已在 FwpKClnt.lib(fwpkclnt.sys) 中引用
+          已在 FwpKClnt.lib(fwpkclnt.sys) 中引用
+          已在 FwpKClnt.lib(fwpkclnt.sys) 中引用
+          已在 FwpKClnt.lib(fwpkclnt.sys) 中引用
+          已在 FwpKClnt.lib(fwpkclnt.sys) 中引用
+          已加载 FwpKClnt.lib(fwpkclnt.sys)
+        已找到 fwpkclnt_NULL_THUNK_DATA
+          已在 FwpKClnt.lib(fwpkclnt.sys) 中引用
+          已加载 FwpKClnt.lib(fwpkclnt.sys)
+      正在搜索 C:\Program Files (x86)\Windows Kits\10\lib\10.0.18362.0\km\x64\NetIO.lib:
+      正在搜索 C:\Program Files (x86)\Windows Kits\10\lib\10.0.18362.0\km\x64\NDIS.lib:
+      正在搜索 C:\Program Files (x86)\Windows Kits\10\lib\10.0.18362.0\km\x64\WDMSec.lib:
+        已找到 SDDL_DEVOBJ_SYS_ALL_ADM_ALL
+          已在 Capture2.obj 中引用
+          已加载 WDMSec.lib(iosddl.obj)
+      正在搜索 C:\Program Files (x86)\Windows Kits\10\lib\10.0.18362.0\um\x64\UUID.lib:
+      正在搜索 C:\Program Files (x86)\Windows Kits\10\lib\10.0.18362.0\km\x64\WDM.lib:
+      正在搜索 C:\Program Files (x86)\Windows Kits\10\lib\10.0.18362.0\km\x64\BufferOverflowFastFailK.lib:
+        已找到 __security_check_cookie
+          已在 registerCallouts.obj 中引用
+          已在 NTOSKrnl.lib(gshandler.obj) 中引用
+          已加载 BufferOverflowFastFailK.lib(amdsecgs.obj)
+        已找到 __security_cookie
+          已在 registerCallouts.obj 中引用
+          已在 BufferOverflowFastFailK.lib(amdsecgs.obj) 中引用
+          已加载 BufferOverflowFastFailK.lib(gs_support.obj)
+        已找到 __report_gsfailure
+          已在 BufferOverflowFastFailK.lib(amdsecgs.obj) 中引用
+          已加载 BufferOverflowFastFailK.lib(gs_report.obj)
+      正在搜索 C:\Program Files (x86)\Windows Kits\10\lib\10.0.18362.0\km\x64\hal.lib:
+      正在搜索 C:\Program Files (x86)\Windows Kits\10\lib\10.0.18362.0\km\x64\wmilib.lib:
+      正在搜索 C:\Program Files (x86)\Windows Kits\10\lib\wdf\kmdf\x64\1.15\WdfLdr.lib:
+      正在搜索 C:\Program Files (x86)\Windows Kits\10\lib\wdf\kmdf\x64\1.15\WdfDriverEntry.lib:
+        已找到 FxDriverEntry
+          已加载 WdfDriverEntry.lib(stub.obj)
+        已找到 "long __cdecl FxStubInitTypes(void)" (?FxStubInitTypes@@YAJXZ)
+          已在 WdfDriverEntry.lib(stub.obj) 中引用
+          已加载 WdfDriverEntry.lib(inittypes.obj)
+        已找到 "void __cdecl FxStubUnbindClasses(struct _WDF_BIND_INFO *)" (?FxStubUnbindClasses@@YAXPEAU_WDF_BIND_INFO@@@Z)
+          已在 WdfDriverEntry.lib(stub.obj) 中引用
+          已加载 WdfDriverEntry.lib(classbind.obj)
+      正在搜索 C:\Program Files (x86)\Windows Kits\10\lib\10.0.18362.0\km\x64\NTOSKrnl.lib:
+        已找到 __imp_RtlCopyUnicodeString
+          已在 WdfDriverEntry.lib(stub.obj) 中引用
+          已加载 NTOSKrnl.lib(ntoskrnl.exe)
+      正在搜索 C:\Program Files (x86)\Windows Kits\10\lib\10.0.18362.0\km\x64\FwpKClnt.lib:
+      正在搜索 C:\Program Files (x86)\Windows Kits\10\lib\10.0.18362.0\km\x64\NetIO.lib:
+      正在搜索 C:\Program Files (x86)\Windows Kits\10\lib\10.0.18362.0\km\x64\NDIS.lib:
+      正在搜索 C:\Program Files (x86)\Windows Kits\10\lib\10.0.18362.0\km\x64\WDMSec.lib:
+      正在搜索 C:\Program Files (x86)\Windows Kits\10\lib\10.0.18362.0\um\x64\UUID.lib:
+      正在搜索 C:\Program Files (x86)\Windows Kits\10\lib\10.0.18362.0\km\x64\WDM.lib:
+      正在搜索 C:\Program Files (x86)\Windows Kits\10\lib\10.0.18362.0\km\x64\BufferOverflowFastFailK.lib:
+      正在搜索 C:\Program Files (x86)\Windows Kits\10\lib\10.0.18362.0\km\x64\hal.lib:
+      正在搜索 C:\Program Files (x86)\Windows Kits\10\lib\10.0.18362.0\km\x64\wmilib.lib:
+      正在搜索 C:\Program Files (x86)\Windows Kits\10\lib\wdf\kmdf\x64\1.15\WdfLdr.lib:
+        已找到 WdfVersionBind
+          已在 WdfDriverEntry.lib(stub.obj) 中引用
+          已加载 WdfLdr.lib(WDFLDR.SYS)
+        已找到 WdfVersionUnbind
+          已在 WdfDriverEntry.lib(stub.obj) 中引用
+          已加载 WdfLdr.lib(WDFLDR.SYS)
+        已找到 WdfVersionBindClass
+          已在 WdfDriverEntry.lib(classbind.obj) 中引用
+          已加载 WdfLdr.lib(WDFLDR.SYS)
+        已找到 WdfVersionUnbindClass
+          已在 WdfDriverEntry.lib(classbind.obj) 中引用
+          已加载 WdfLdr.lib(WDFLDR.SYS)
+        已找到 __IMPORT_DESCRIPTOR_WDFLDR
+          已在 WdfLdr.lib(WDFLDR.SYS) 中引用
+          已在 WdfLdr.lib(WDFLDR.SYS) 中引用
+          已在 WdfLdr.lib(WDFLDR.SYS) 中引用
+          已在 WdfLdr.lib(WDFLDR.SYS) 中引用
+          已加载 WdfLdr.lib(WDFLDR.SYS)
+        已找到 WDFLDR_NULL_THUNK_DATA
+          已在 WdfLdr.lib(WDFLDR.SYS) 中引用
+          已加载 WdfLdr.lib(WDFLDR.SYS)
+  
+  已完成库搜索
+  
+  已完成传递 1
+  
+  
+  正在搜索库
+      正在搜索 C:\Program Files (x86)\Windows Kits\10\lib\10.0.18362.0\km\x64\NTOSKrnl.lib:
+      正在搜索 C:\Program Files (x86)\Windows Kits\10\lib\10.0.18362.0\km\x64\FwpKClnt.lib:
+      正在搜索 C:\Program Files (x86)\Windows Kits\10\lib\10.0.18362.0\km\x64\NetIO.lib:
+      正在搜索 C:\Program Files (x86)\Windows Kits\10\lib\10.0.18362.0\km\x64\NDIS.lib:
+      正在搜索 C:\Program Files (x86)\Windows Kits\10\lib\10.0.18362.0\km\x64\WDMSec.lib:
+      正在搜索 C:\Program Files (x86)\Windows Kits\10\lib\10.0.18362.0\um\x64\UUID.lib:
+      正在搜索 C:\Program Files (x86)\Windows Kits\10\lib\10.0.18362.0\km\x64\WDM.lib:
+      正在搜索 C:\Program Files (x86)\Windows Kits\10\lib\10.0.18362.0\km\x64\BufferOverflowFastFailK.lib:
+        已找到 _load_config_used
+          已加载 BufferOverflowFastFailK.lib(loadcfg.obj)
+  
+  已完成库搜索
+  
+  
+  未使用的库:
+    C:\Program Files (x86)\Windows Kits\10\lib\10.0.18362.0\km\x64\NetIO.lib
+    C:\Program Files (x86)\Windows Kits\10\lib\10.0.18362.0\km\x64\NDIS.lib
+    C:\Program Files (x86)\Windows Kits\10\lib\10.0.18362.0\um\x64\UUID.lib
+    C:\Program Files (x86)\Windows Kits\10\lib\10.0.18362.0\km\x64\WDM.lib
+    C:\Program Files (x86)\Windows Kits\10\lib\10.0.18362.0\km\x64\hal.lib
+    C:\Program Files (x86)\Windows Kits\10\lib\10.0.18362.0\km\x64\wmilib.lib
+  
+      已丢弃 WFP_DRIVER_CLASS_GUID(从 calloutFunctions.obj 中)
+      已丢弃 DEVPKEY_NAME(从 calloutFunctions.obj 中)
+      已丢弃 DEVPKEY_Device_DeviceDesc(从 calloutFunctions.obj 中)
+      已丢弃 DEVPKEY_Device_HardwareIds(从 calloutFunctions.obj 中)
+      已丢弃 DEVPKEY_Device_CompatibleIds(从 calloutFunctions.obj 中)
+      已丢弃 DEVPKEY_Device_Service(从 calloutFunctions.obj 中)
+      已丢弃 DEVPKEY_Device_Class(从 calloutFunctions.obj 中)
+      已丢弃 DEVPKEY_Device_ClassGuid(从 calloutFunctions.obj 中)
+      已丢弃 DEVPKEY_Device_Driver(从 calloutFunctions.obj 中)
+      已丢弃 DEVPKEY_Device_ConfigFlags(从 calloutFunctions.obj 中)
+      已丢弃 DEVPKEY_Device_Manufacturer(从 calloutFunctions.obj 中)
+      已丢弃 DEVPKEY_Device_FriendlyName(从 calloutFunctions.obj 中)
+      已丢弃 DEVPKEY_Device_LocationInfo(从 calloutFunctions.obj 中)
+      已丢弃 DEVPKEY_Device_PDOName(从 calloutFunctions.obj 中)
+      已丢弃 DEVPKEY_Device_Capabilities(从 calloutFunctions.obj 中)
+      已丢弃 DEVPKEY_Device_UINumber(从 calloutFunctions.obj 中)
+      已丢弃 DEVPKEY_Device_UpperFilters(从 calloutFunctions.obj 中)
+      已丢弃 DEVPKEY_Device_LowerFilters(从 calloutFunctions.obj 中)
+      已丢弃 DEVPKEY_Device_BusTypeGuid(从 calloutFunctions.obj 中)
+      已丢弃 DEVPKEY_Device_LegacyBusType(从 calloutFunctions.obj 中)
+      已丢弃 DEVPKEY_Device_BusNumber(从 calloutFunctions.obj 中)
+      已丢弃 DEVPKEY_Device_EnumeratorName(从 calloutFunctions.obj 中)
+      已丢弃 DEVPKEY_Device_Security(从 calloutFunctions.obj 中)
+      已丢弃 DEVPKEY_Device_SecuritySDS(从 calloutFunctions.obj 中)
+      已丢弃 DEVPKEY_Device_DevType(从 calloutFunctions.obj 中)
+      已丢弃 DEVPKEY_Device_Exclusive(从 calloutFunctions.obj 中)
+      已丢弃 DEVPKEY_Device_Characteristics(从 calloutFunctions.obj 中)
+      已丢弃 DEVPKEY_Device_Address(从 calloutFunctions.obj 中)
+      已丢弃 DEVPKEY_Device_UINumberDescFormat(从 calloutFunctions.obj 中)
+      已丢弃 DEVPKEY_Device_PowerData(从 calloutFunctions.obj 中)
+      已丢弃 DEVPKEY_Device_RemovalPolicy(从 calloutFunctions.obj 中)
+      已丢弃 DEVPKEY_Device_RemovalPolicyDefault(从 calloutFunctions.obj 中)
+      已丢弃 DEVPKEY_Device_RemovalPolicyOverride(从 calloutFunctions.obj 中)
+      已丢弃 DEVPKEY_Device_InstallState(从 calloutFunctions.obj 中)
+      已丢弃 DEVPKEY_Device_LocationPaths(从 calloutFunctions.obj 中)
+      已丢弃 DEVPKEY_Device_BaseContainerId(从 calloutFunctions.obj 中)
+      已丢弃 DEVPKEY_Device_InstanceId(从 calloutFunctions.obj 中)
+      已丢弃 DEVPKEY_Device_DevNodeStatus(从 calloutFunctions.obj 中)
+      已丢弃 DEVPKEY_Device_ProblemCode(从 calloutFunctions.obj 中)
+      已丢弃 DEVPKEY_Device_EjectionRelations(从 calloutFunctions.obj 中)
+      已丢弃 DEVPKEY_Device_RemovalRelations(从 calloutFunctions.obj 中)
+      已丢弃 DEVPKEY_Device_PowerRelations(从 calloutFunctions.obj 中)
+      已丢弃 DEVPKEY_Device_BusRelations(从 calloutFunctions.obj 中)
+      已丢弃 DEVPKEY_Device_Parent(从 calloutFunctions.obj 中)
+      已丢弃 DEVPKEY_Device_Children(从 calloutFunctions.obj 中)
+      已丢弃 DEVPKEY_Device_Siblings(从 calloutFunctions.obj 中)
+      已丢弃 DEVPKEY_Device_TransportRelations(从 calloutFunctions.obj 中)
+      已丢弃 DEVPKEY_Device_ProblemStatus(从 calloutFunctions.obj 中)
+      已丢弃 DEVPKEY_Device_Reported(从 calloutFunctions.obj 中)
+      已丢弃 DEVPKEY_Device_Legacy(从 calloutFunctions.obj 中)
+      已丢弃 DEVPKEY_Device_ContainerId(从 calloutFunctions.obj 中)
+      已丢弃 DEVPKEY_Device_InLocalMachineContainer(从 calloutFunctions.obj 中)
+      已丢弃 DEVPKEY_Device_Model(从 calloutFunctions.obj 中)
+      已丢弃 DEVPKEY_Device_ModelId(从 calloutFunctions.obj 中)
+      已丢弃 DEVPKEY_Device_FriendlyNameAttributes(从 calloutFunctions.obj 中)
+      已丢弃 DEVPKEY_Device_ManufacturerAttributes(从 calloutFunctions.obj 中)
+      已丢弃 DEVPKEY_Device_PresenceNotForDevice(从 calloutFunctions.obj 中)
+      已丢弃 DEVPKEY_Device_SignalStrength(从 calloutFunctions.obj 中)
+      已丢弃 DEVPKEY_Device_IsAssociateableByUserAction(从 calloutFunctions.obj 中)
+      已丢弃 DEVPKEY_Device_ShowInUninstallUI(从 calloutFunctions.obj 中)
+      已丢弃 DEVPKEY_Device_Numa_Proximity_Domain(从 calloutFunctions.obj 中)
+      已丢弃 DEVPKEY_Device_DHP_Rebalance_Policy(从 calloutFunctions.obj 中)
+      已丢弃 DEVPKEY_Device_Numa_Node(从 calloutFunctions.obj 中)
+      已丢弃 DEVPKEY_Device_BusReportedDeviceDesc(从 calloutFunctions.obj 中)
+      已丢弃 DEVPKEY_Device_IsPresent(从 calloutFunctions.obj 中)
+      已丢弃 DEVPKEY_Device_HasProblem(从 calloutFunctions.obj 中)
+      已丢弃 DEVPKEY_Device_ConfigurationId(从 calloutFunctions.obj 中)
+      已丢弃 DEVPKEY_Device_ReportedDeviceIdsHash(从 calloutFunctions.obj 中)
+      已丢弃 DEVPKEY_Device_PhysicalDeviceLocation(从 calloutFunctions.obj 中)
+      已丢弃 DEVPKEY_Device_BiosDeviceName(从 calloutFunctions.obj 中)
+      已丢弃 DEVPKEY_Device_DriverProblemDesc(从 calloutFunctions.obj 中)
+      已丢弃 DEVPKEY_Device_DebuggerSafe(从 calloutFunctions.obj 中)
+      已丢弃 DEVPKEY_Device_PostInstallInProgress(从 calloutFunctions.obj 中)
+      已丢弃 DEVPKEY_Device_Stack(从 calloutFunctions.obj 中)
+      已丢弃 DEVPKEY_Device_ExtendedConfigurationIds(从 calloutFunctions.obj 中)
+      已丢弃 DEVPKEY_Device_IsRebootRequired(从 calloutFunctions.obj 中)
+      已丢弃 DEVPKEY_Device_FirmwareDate(从 calloutFunctions.obj 中)
+      已丢弃 DEVPKEY_Device_FirmwareVersion(从 calloutFunctions.obj 中)
+      已丢弃 DEVPKEY_Device_FirmwareRevision(从 calloutFunctions.obj 中)
+      已丢弃 DEVPKEY_Device_DependencyProviders(从 calloutFunctions.obj 中)
+      已丢弃 DEVPKEY_Device_DependencyDependents(从 calloutFunctions.obj 中)
+      已丢弃 DEVPKEY_Device_SoftRestartSupported(从 calloutFunctions.obj 中)
+      已丢弃 DEVPKEY_Device_ExtendedAddress(从 calloutFunctions.obj 中)
+      已丢弃 DEVPKEY_Device_AssignedToGuest(从 calloutFunctions.obj 中)
+      已丢弃 DEVPKEY_Device_SessionId(从 calloutFunctions.obj 中)
+      已丢弃 DEVPKEY_Device_InstallDate(从 calloutFunctions.obj 中)
+      已丢弃 DEVPKEY_Device_FirstInstallDate(从 calloutFunctions.obj 中)
+      已丢弃 DEVPKEY_Device_LastArrivalDate(从 calloutFunctions.obj 中)
+      已丢弃 DEVPKEY_Device_LastRemovalDate(从 calloutFunctions.obj 中)
+      已丢弃 DEVPKEY_Device_DriverDate(从 calloutFunctions.obj 中)
+      已丢弃 DEVPKEY_Device_DriverVersion(从 calloutFunctions.obj 中)
+      已丢弃 DEVPKEY_Device_DriverDesc(从 calloutFunctions.obj 中)
+      已丢弃 DEVPKEY_Device_DriverInfPath(从 calloutFunctions.obj 中)
+      已丢弃 DEVPKEY_Device_DriverInfSection(从 calloutFunctions.obj 中)
+      已丢弃 DEVPKEY_Device_DriverInfSectionExt(从 calloutFunctions.obj 中)
+      已丢弃 DEVPKEY_Device_MatchingDeviceId(从 calloutFunctions.obj 中)
+      已丢弃 DEVPKEY_Device_DriverProvider(从 calloutFunctions.obj 中)
+      已丢弃 DEVPKEY_Device_DriverPropPageProvider(从 calloutFunctions.obj 中)
+      已丢弃 DEVPKEY_Device_DriverCoInstallers(从 calloutFunctions.obj 中)
+      已丢弃 DEVPKEY_Device_ResourcePickerTags(从 calloutFunctions.obj 中)
+      已丢弃 DEVPKEY_Device_ResourcePickerExceptions(从 calloutFunctions.obj 中)
+      已丢弃 DEVPKEY_Device_DriverRank(从 calloutFunctions.obj 中)
+      已丢弃 DEVPKEY_Device_DriverLogoLevel(从 calloutFunctions.obj 中)
+      已丢弃 DEVPKEY_Device_NoConnectSound(从 calloutFunctions.obj 中)
+      已丢弃 DEVPKEY_Device_GenericDriverInstalled(从 calloutFunctions.obj 中)
+      已丢弃 DEVPKEY_Device_AdditionalSoftwareRequested(从 calloutFunctions.obj 中)
+      已丢弃 DEVPKEY_Device_SafeRemovalRequired(从 calloutFunctions.obj 中)
+      已丢弃 DEVPKEY_Device_SafeRemovalRequiredOverride(从 calloutFunctions.obj 中)
+      已丢弃 DEVPKEY_DrvPkg_Model(从 calloutFunctions.obj 中)
+      已丢弃 DEVPKEY_DrvPkg_VendorWebSite(从 calloutFunctions.obj 中)
+      已丢弃 DEVPKEY_DrvPkg_DetailedDescription(从 calloutFunctions.obj 中)
+      已丢弃 DEVPKEY_DrvPkg_DocumentationLink(从 calloutFunctions.obj 中)
+      已丢弃 DEVPKEY_DrvPkg_Icon(从 calloutFunctions.obj 中)
+      已丢弃 DEVPKEY_DrvPkg_BrandingIcon(从 calloutFunctions.obj 中)
+      已丢弃 DEVPKEY_DeviceClass_UpperFilters(从 calloutFunctions.obj 中)
+      已丢弃 DEVPKEY_DeviceClass_LowerFilters(从 calloutFunctions.obj 中)
+      已丢弃 DEVPKEY_DeviceClass_Security(从 calloutFunctions.obj 中)
+      已丢弃 DEVPKEY_DeviceClass_SecuritySDS(从 calloutFunctions.obj 中)
+      已丢弃 DEVPKEY_DeviceClass_DevType(从 calloutFunctions.obj 中)
+      已丢弃 DEVPKEY_DeviceClass_Exclusive(从 calloutFunctions.obj 中)
+      已丢弃 DEVPKEY_DeviceClass_Characteristics(从 calloutFunctions.obj 中)
+      已丢弃 DEVPKEY_DeviceClass_Name(从 calloutFunctions.obj 中)
+      已丢弃 DEVPKEY_DeviceClass_ClassName(从 calloutFunctions.obj 中)
+      已丢弃 DEVPKEY_DeviceClass_Icon(从 calloutFunctions.obj 中)
+      已丢弃 DEVPKEY_DeviceClass_ClassInstaller(从 calloutFunctions.obj 中)
+      已丢弃 DEVPKEY_DeviceClass_PropPageProvider(从 calloutFunctions.obj 中)
+      已丢弃 DEVPKEY_DeviceClass_NoInstallClass(从 calloutFunctions.obj 中)
+      已丢弃 DEVPKEY_DeviceClass_NoDisplayClass(从 calloutFunctions.obj 中)
+      已丢弃 DEVPKEY_DeviceClass_SilentInstall(从 calloutFunctions.obj 中)
+      已丢弃 DEVPKEY_DeviceClass_NoUseClass(从 calloutFunctions.obj 中)
+      已丢弃 DEVPKEY_DeviceClass_DefaultService(从 calloutFunctions.obj 中)
+      已丢弃 DEVPKEY_DeviceClass_IconPath(从 calloutFunctions.obj 中)
+      已丢弃 DEVPKEY_DeviceClass_DHPRebalanceOptOut(从 calloutFunctions.obj 中)
+      已丢弃 DEVPKEY_DeviceClass_ClassCoInstallers(从 calloutFunctions.obj 中)
+      已丢弃 DEVPKEY_DeviceInterface_FriendlyName(从 calloutFunctions.obj 中)
+      已丢弃 DEVPKEY_DeviceInterface_Enabled(从 calloutFunctions.obj 中)
+      已丢弃 DEVPKEY_DeviceInterface_ClassGuid(从 calloutFunctions.obj 中)
+      已丢弃 DEVPKEY_DeviceInterface_ReferenceString(从 calloutFunctions.obj 中)
+      已丢弃 DEVPKEY_DeviceInterface_Restricted(从 calloutFunctions.obj 中)
+      已丢弃 DEVPKEY_DeviceInterface_UnrestrictedAppCapabilities(从 calloutFunctions.obj 中)
+      已丢弃 DEVPKEY_DeviceInterface_SchematicName(从 calloutFunctions.obj 中)
+      已丢弃 DEVPKEY_DeviceInterfaceClass_DefaultInterface(从 calloutFunctions.obj 中)
+      已丢弃 DEVPKEY_DeviceInterfaceClass_Name(从 calloutFunctions.obj 中)
+      已丢弃 DEVPKEY_DeviceContainer_Address(从 calloutFunctions.obj 中)
+      已丢弃 DEVPKEY_DeviceContainer_DiscoveryMethod(从 calloutFunctions.obj 中)
+      已丢弃 DEVPKEY_DeviceContainer_IsEncrypted(从 calloutFunctions.obj 中)
+      已丢弃 DEVPKEY_DeviceContainer_IsAuthenticated(从 calloutFunctions.obj 中)
+      已丢弃 DEVPKEY_DeviceContainer_IsConnected(从 calloutFunctions.obj 中)
+      已丢弃 DEVPKEY_DeviceContainer_IsPaired(从 calloutFunctions.obj 中)
+      已丢弃 DEVPKEY_DeviceContainer_Icon(从 calloutFunctions.obj 中)
+      已丢弃 DEVPKEY_DeviceContainer_Version(从 calloutFunctions.obj 中)
+      已丢弃 DEVPKEY_DeviceContainer_Last_Seen(从 calloutFunctions.obj 中)
+      已丢弃 DEVPKEY_DeviceContainer_Last_Connected(从 calloutFunctions.obj 中)
+      已丢弃 DEVPKEY_DeviceContainer_IsShowInDisconnectedState(从 calloutFunctions.obj 中)
+      已丢弃 DEVPKEY_DeviceContainer_IsLocalMachine(从 calloutFunctions.obj 中)
+      已丢弃 DEVPKEY_DeviceContainer_MetadataPath(从 calloutFunctions.obj 中)
+      已丢弃 DEVPKEY_DeviceContainer_IsMetadataSearchInProgress(从 calloutFunctions.obj 中)
+      已丢弃 DEVPKEY_DeviceContainer_MetadataChecksum(从 calloutFunctions.obj 中)
+      已丢弃 DEVPKEY_DeviceContainer_IsNotInterestingForDisplay(从 calloutFunctions.obj 中)
+      已丢弃 DEVPKEY_DeviceContainer_LaunchDeviceStageOnDeviceConnect(从 calloutFunctions.obj 中)
+      已丢弃 DEVPKEY_DeviceContainer_LaunchDeviceStageFromExplorer(从 calloutFunctions.obj 中)
+      已丢弃 DEVPKEY_DeviceContainer_BaselineExperienceId(从 calloutFunctions.obj 中)
+      已丢弃 DEVPKEY_DeviceContainer_IsDeviceUniquelyIdentifiable(从 calloutFunctions.obj 中)
+      已丢弃 DEVPKEY_DeviceContainer_AssociationArray(从 calloutFunctions.obj 中)
+      已丢弃 DEVPKEY_DeviceContainer_DeviceDescription1(从 calloutFunctions.obj 中)
+      已丢弃 DEVPKEY_DeviceContainer_DeviceDescription2(从 calloutFunctions.obj 中)
+      已丢弃 DEVPKEY_DeviceContainer_HasProblem(从 calloutFunctions.obj 中)
+      已丢弃 DEVPKEY_DeviceContainer_IsSharedDevice(从 calloutFunctions.obj 中)
+      已丢弃 DEVPKEY_DeviceContainer_IsNetworkDevice(从 calloutFunctions.obj 中)
+      已丢弃 DEVPKEY_DeviceContainer_IsDefaultDevice(从 calloutFunctions.obj 中)
+      已丢弃 DEVPKEY_DeviceContainer_MetadataCabinet(从 calloutFunctions.obj 中)
+      已丢弃 DEVPKEY_DeviceContainer_RequiresPairingElevation(从 calloutFunctions.obj 中)
+      已丢弃 DEVPKEY_DeviceContainer_ExperienceId(从 calloutFunctions.obj 中)
+      已丢弃 DEVPKEY_DeviceContainer_Category(从 calloutFunctions.obj 中)
+      已丢弃 DEVPKEY_DeviceContainer_Category_Desc_Singular(从 calloutFunctions.obj 中)
+      已丢弃 DEVPKEY_DeviceContainer_Category_Desc_Plural(从 calloutFunctions.obj 中)
+      已丢弃 DEVPKEY_DeviceContainer_Category_Icon(从 calloutFunctions.obj 中)
+      已丢弃 DEVPKEY_DeviceContainer_CategoryGroup_Desc(从 calloutFunctions.obj 中)
+      已丢弃 DEVPKEY_DeviceContainer_CategoryGroup_Icon(从 calloutFunctions.obj 中)
+      已丢弃 DEVPKEY_DeviceContainer_PrimaryCategory(从 calloutFunctions.obj 中)
+      已丢弃 DEVPKEY_DeviceContainer_UnpairUninstall(从 calloutFunctions.obj 中)
+      已丢弃 DEVPKEY_DeviceContainer_RequiresUninstallElevation(从 calloutFunctions.obj 中)
+      已丢弃 DEVPKEY_DeviceContainer_DeviceFunctionSubRank(从 calloutFunctions.obj 中)
+      已丢弃 DEVPKEY_DeviceContainer_AlwaysShowDeviceAsConnected(从 calloutFunctions.obj 中)
+      已丢弃 DEVPKEY_DeviceContainer_ConfigFlags(从 calloutFunctions.obj 中)
+      已丢弃 DEVPKEY_DeviceContainer_PrivilegedPackageFamilyNames(从 calloutFunctions.obj 中)
+      已丢弃 DEVPKEY_DeviceContainer_CustomPrivilegedPackageFamilyNames(从 calloutFunctions.obj 中)
+      已丢弃 DEVPKEY_DeviceContainer_IsRebootRequired(从 calloutFunctions.obj 中)
+      已丢弃 DEVPKEY_DeviceContainer_FriendlyName(从 calloutFunctions.obj 中)
+      已丢弃 DEVPKEY_DeviceContainer_Manufacturer(从 calloutFunctions.obj 中)
+      已丢弃 DEVPKEY_DeviceContainer_ModelName(从 calloutFunctions.obj 中)
+      已丢弃 DEVPKEY_DeviceContainer_ModelNumber(从 calloutFunctions.obj 中)
+      已丢弃 DEVPKEY_DeviceContainer_InstallInProgress(从 calloutFunctions.obj 中)
+      已丢弃 DEVPKEY_DevQuery_ObjectType(从 calloutFunctions.obj 中)
+      已丢弃 DEVPKEY_PciRootBus_SecondaryInterface(从 calloutFunctions.obj 中)
+      已丢弃 DEVPKEY_PciRootBus_CurrentSpeedAndMode(从 calloutFunctions.obj 中)
+      已丢弃 DEVPKEY_PciRootBus_SupportedSpeedsAndModes(从 calloutFunctions.obj 中)
+      已丢弃 DEVPKEY_PciRootBus_DeviceIDMessagingCapable(从 calloutFunctions.obj 中)
+      已丢弃 DEVPKEY_PciRootBus_SecondaryBusWidth(从 calloutFunctions.obj 中)
+      已丢弃 DEVPKEY_PciRootBus_ExtendedConfigAvailable(从 calloutFunctions.obj 中)
+      已丢弃 DEVPKEY_PciRootBus_ExtendedPCIConfigOpRegionSupport(从 calloutFunctions.obj 中)
+      已丢弃 DEVPKEY_PciRootBus_ASPMSupport(从 calloutFunctions.obj 中)
+      已丢弃 DEVPKEY_PciRootBus_ClockPowerManagementSupport(从 calloutFunctions.obj 中)
+      已丢弃 DEVPKEY_PciRootBus_PCISegmentGroupsSupport(从 calloutFunctions.obj 中)
+      已丢弃 DEVPKEY_PciRootBus_MSISupport(从 calloutFunctions.obj 中)
+      已丢弃 DEVPKEY_PciRootBus_PCIExpressNativeHotPlugControl(从 calloutFunctions.obj 中)
+      已丢弃 DEVPKEY_PciRootBus_SHPCNativeHotPlugControl(从 calloutFunctions.obj 中)
+      已丢弃 DEVPKEY_PciRootBus_PCIExpressNativePMEControl(从 calloutFunctions.obj 中)
+      已丢弃 DEVPKEY_PciRootBus_PCIExpressAERControl(从 calloutFunctions.obj 中)
+      已丢弃 DEVPKEY_PciRootBus_PCIExpressCapabilityControl(从 calloutFunctions.obj 中)
+      已丢弃 DEVPKEY_PciRootBus_NativePciExpressControl(从 calloutFunctions.obj 中)
+      已丢弃 DEVPKEY_PciRootBus_SystemMsiSupport(从 calloutFunctions.obj 中)
+      已丢弃 DEVPKEY_PciDevice_DeviceType(从 calloutFunctions.obj 中)
+      已丢弃 DEVPKEY_PciDevice_CurrentSpeedAndMode(从 calloutFunctions.obj 中)
+      已丢弃 DEVPKEY_PciDevice_BaseClass(从 calloutFunctions.obj 中)
+      已丢弃 DEVPKEY_PciDevice_SubClass(从 calloutFunctions.obj 中)
+      已丢弃 DEVPKEY_PciDevice_ProgIf(从 calloutFunctions.obj 中)
+      已丢弃 DEVPKEY_PciDevice_CurrentPayloadSize(从 calloutFunctions.obj 中)
+      已丢弃 FWPM_LAYER_INBOUND_IPPACKET_V4(从 calloutFunctions.obj 中)
+      已丢弃 DEVPKEY_PciDevice_MaxPayloadSize(从 calloutFunctions.obj 中)
+      已丢弃 FWPM_LAYER_INBOUND_IPPACKET_V4_DISCARD(从 calloutFunctions.obj 中)
+      已丢弃 DEVPKEY_PciDevice_MaxReadRequestSize(从 calloutFunctions.obj 中)
+      已丢弃 DEVPKEY_PciDevice_CurrentLinkSpeed(从 calloutFunctions.obj 中)
+      已丢弃 FWPM_LAYER_INBOUND_IPPACKET_V6(从 calloutFunctions.obj 中)
+      已丢弃 FWPM_LAYER_INBOUND_IPPACKET_V6_DISCARD(从 calloutFunctions.obj 中)
+      已丢弃 DEVPKEY_PciDevice_CurrentLinkWidth(从 calloutFunctions.obj 中)
+      已丢弃 FWPM_LAYER_OUTBOUND_IPPACKET_V4(从 calloutFunctions.obj 中)
+      已丢弃 DEVPKEY_PciDevice_MaxLinkSpeed(从 calloutFunctions.obj 中)
+      已丢弃 DEVPKEY_PciDevice_MaxLinkWidth(从 calloutFunctions.obj 中)
+      已丢弃 FWPM_LAYER_OUTBOUND_IPPACKET_V4_DISCARD(从 calloutFunctions.obj 中)
+      已丢弃 FWPM_LAYER_OUTBOUND_IPPACKET_V6(从 calloutFunctions.obj 中)
+      已丢弃 DEVPKEY_PciDevice_ExpressSpecVersion(从 calloutFunctions.obj 中)
+      已丢弃 FWPM_LAYER_OUTBOUND_IPPACKET_V6_DISCARD(从 calloutFunctions.obj 中)
+      已丢弃 DEVPKEY_PciDevice_InterruptSupport(从 calloutFunctions.obj 中)
+      已丢弃 DEVPKEY_PciDevice_InterruptMessageMaximum(从 calloutFunctions.obj 中)
+      已丢弃 FWPM_LAYER_IPFORWARD_V4(从 calloutFunctions.obj 中)
+      已丢弃 DEVPKEY_PciDevice_BarTypes(从 calloutFunctions.obj 中)
+      已丢弃 FWPM_LAYER_IPFORWARD_V4_DISCARD(从 calloutFunctions.obj 中)
+      已丢弃 DEVPKEY_PciDevice_AERCapabilityPresent(从 calloutFunctions.obj 中)
+      已丢弃 FWPM_LAYER_IPFORWARD_V6(从 calloutFunctions.obj 中)
+      已丢弃 FWPM_LAYER_IPFORWARD_V6_DISCARD(从 calloutFunctions.obj 中)
+      已丢弃 DEVPKEY_PciDevice_FirmwareErrorHandling(从 calloutFunctions.obj 中)
+      已丢弃 DEVPKEY_PciDevice_Uncorrectable_Error_Mask(从 calloutFunctions.obj 中)
+      已丢弃 FWPM_LAYER_INBOUND_TRANSPORT_V4_DISCARD(从 calloutFunctions.obj 中)
+      已丢弃 DEVPKEY_PciDevice_Uncorrectable_Error_Severity(从 calloutFunctions.obj 中)
+      已丢弃 FWPM_LAYER_INBOUND_TRANSPORT_V6(从 calloutFunctions.obj 中)
+      已丢弃 DEVPKEY_PciDevice_Correctable_Error_Mask(从 calloutFunctions.obj 中)
+      已丢弃 DEVPKEY_PciDevice_ECRC_Errors(从 calloutFunctions.obj 中)
+      已丢弃 FWPM_LAYER_INBOUND_TRANSPORT_V6_DISCARD(从 calloutFunctions.obj 中)
+      已丢弃 DEVPKEY_PciDevice_Error_Reporting(从 calloutFunctions.obj 中)
+      已丢弃 DEVPKEY_PciDevice_RootError_Reporting(从 calloutFunctions.obj 中)
+      已丢弃 FWPM_LAYER_OUTBOUND_TRANSPORT_V4_DISCARD(从 calloutFunctions.obj 中)
+      已丢弃 FWPM_LAYER_OUTBOUND_TRANSPORT_V6(从 calloutFunctions.obj 中)
+      已丢弃 DEVPKEY_PciDevice_S0WakeupSupported(从 calloutFunctions.obj 中)
+      已丢弃 DEVPKEY_PciDevice_SriovSupport(从 calloutFunctions.obj 中)
+      已丢弃 FWPM_LAYER_OUTBOUND_TRANSPORT_V6_DISCARD(从 calloutFunctions.obj 中)
+      已丢弃 DEVPKEY_PciDevice_Label_Id(从 calloutFunctions.obj 中)
+      已丢弃 FWPM_LAYER_STREAM_V4(从 calloutFunctions.obj 中)
+      已丢弃 DEVPKEY_PciDevice_Label_String(从 calloutFunctions.obj 中)
+      已丢弃 FWPM_LAYER_STREAM_V4_DISCARD(从 calloutFunctions.obj 中)
+      已丢弃 DEVPKEY_PciDevice_AcsSupport(从 calloutFunctions.obj 中)
+      已丢弃 FWPM_LAYER_STREAM_V6(从 calloutFunctions.obj 中)
+      已丢弃 DEVPKEY_PciDevice_AriSupport(从 calloutFunctions.obj 中)
+      已丢弃 FWPM_LAYER_STREAM_V6_DISCARD(从 calloutFunctions.obj 中)
+      已丢弃 FWPM_LAYER_DATAGRAM_DATA_V4(从 calloutFunctions.obj 中)
+      已丢弃 DEVPKEY_PciDevice_AcsCompatibleUpHierarchy(从 calloutFunctions.obj 中)
+      已丢弃 DEVPKEY_PciDevice_AcsCapabilityRegister(从 calloutFunctions.obj 中)
+      已丢弃 FWPM_LAYER_DATAGRAM_DATA_V4_DISCARD(从 calloutFunctions.obj 中)
+      已丢弃 DEVPKEY_PciDevice_AtsSupport(从 calloutFunctions.obj 中)
+      已丢弃 FWPM_LAYER_DATAGRAM_DATA_V6(从 calloutFunctions.obj 中)
+      已丢弃 DEVPKEY_PciDevice_RequiresReservedMemoryRegion(从 calloutFunctions.obj 中)
+      已丢弃 FWPM_LAYER_DATAGRAM_DATA_V6_DISCARD(从 calloutFunctions.obj 中)
+      已丢弃 FWPM_LAYER_INBOUND_ICMP_ERROR_V4(从 calloutFunctions.obj 中)
+      已丢弃 DEVPKEY_PciDevice_AtomicsSupported(从 calloutFunctions.obj 中)
+      已丢弃 FWPM_LAYER_INBOUND_ICMP_ERROR_V4_DISCARD(从 calloutFunctions.obj 中)
+      已丢弃 FWPM_LAYER_INBOUND_ICMP_ERROR_V6(从 calloutFunctions.obj 中)
+      已丢弃 FWPM_LAYER_INBOUND_ICMP_ERROR_V6_DISCARD(从 calloutFunctions.obj 中)
+      已丢弃 FWPM_LAYER_OUTBOUND_ICMP_ERROR_V4(从 calloutFunctions.obj 中)
+      已丢弃 FWPM_LAYER_OUTBOUND_ICMP_ERROR_V4_DISCARD(从 calloutFunctions.obj 中)
+      已丢弃 FWPM_LAYER_OUTBOUND_ICMP_ERROR_V6(从 calloutFunctions.obj 中)
+      已丢弃 FWPM_LAYER_OUTBOUND_ICMP_ERROR_V6_DISCARD(从 calloutFunctions.obj 中)
+      已丢弃 FWPM_LAYER_ALE_RESOURCE_ASSIGNMENT_V4(从 calloutFunctions.obj 中)
+      已丢弃 FWPM_LAYER_ALE_RESOURCE_ASSIGNMENT_V4_DISCARD(从 calloutFunctions.obj 中)
+      已丢弃 FWPM_LAYER_ALE_RESOURCE_ASSIGNMENT_V6(从 calloutFunctions.obj 中)
+      已丢弃 FWPM_LAYER_ALE_RESOURCE_ASSIGNMENT_V6_DISCARD(从 calloutFunctions.obj 中)
+      已丢弃 FWPM_LAYER_ALE_AUTH_LISTEN_V4(从 calloutFunctions.obj 中)
+      已丢弃 FWPM_LAYER_ALE_AUTH_LISTEN_V4_DISCARD(从 calloutFunctions.obj 中)
+      已丢弃 FWPM_LAYER_ALE_AUTH_LISTEN_V6(从 calloutFunctions.obj 中)
+      已丢弃 FWPM_LAYER_ALE_AUTH_LISTEN_V6_DISCARD(从 calloutFunctions.obj 中)
+      已丢弃 FWPM_LAYER_ALE_AUTH_RECV_ACCEPT_V4(从 calloutFunctions.obj 中)
+      已丢弃 FWPM_LAYER_ALE_AUTH_RECV_ACCEPT_V4_DISCARD(从 calloutFunctions.obj 中)
+      已丢弃 FWPM_LAYER_ALE_AUTH_RECV_ACCEPT_V6(从 calloutFunctions.obj 中)
+      已丢弃 FWPM_LAYER_ALE_AUTH_RECV_ACCEPT_V6_DISCARD(从 calloutFunctions.obj 中)
+      已丢弃 FWPM_LAYER_ALE_AUTH_CONNECT_V4(从 calloutFunctions.obj 中)
+      已丢弃 FWPM_LAYER_ALE_AUTH_CONNECT_V4_DISCARD(从 calloutFunctions.obj 中)
+      已丢弃 FWPM_LAYER_ALE_AUTH_CONNECT_V6(从 calloutFunctions.obj 中)
+      已丢弃 FWPM_LAYER_ALE_AUTH_CONNECT_V6_DISCARD(从 calloutFunctions.obj 中)
+      已丢弃 FWPM_LAYER_ALE_FLOW_ESTABLISHED_V4(从 calloutFunctions.obj 中)
+      已丢弃 FWPM_LAYER_ALE_FLOW_ESTABLISHED_V4_DISCARD(从 calloutFunctions.obj 中)
+      已丢弃 FWPM_LAYER_ALE_FLOW_ESTABLISHED_V6(从 calloutFunctions.obj 中)
+      已丢弃 FWPM_LAYER_ALE_FLOW_ESTABLISHED_V6_DISCARD(从 calloutFunctions.obj 中)
+      已丢弃 FWPM_LAYER_INBOUND_MAC_FRAME_ETHERNET(从 calloutFunctions.obj 中)
+      已丢弃 FWPM_LAYER_OUTBOUND_MAC_FRAME_ETHERNET(从 calloutFunctions.obj 中)
+      已丢弃 FWPM_LAYER_INGRESS_VSWITCH_ETHERNET(从 calloutFunctions.obj 中)
+      已丢弃 FWPM_LAYER_EGRESS_VSWITCH_ETHERNET(从 calloutFunctions.obj 中)
+      已丢弃 FWPM_LAYER_INGRESS_VSWITCH_TRANSPORT_V4(从 calloutFunctions.obj 中)
+      已丢弃 FWPM_LAYER_INGRESS_VSWITCH_TRANSPORT_V6(从 calloutFunctions.obj 中)
+      已丢弃 FWPM_LAYER_EGRESS_VSWITCH_TRANSPORT_V4(从 calloutFunctions.obj 中)
+      已丢弃 FWPM_LAYER_EGRESS_VSWITCH_TRANSPORT_V6(从 calloutFunctions.obj 中)
+      已丢弃 FWPM_LAYER_INBOUND_TRANSPORT_FAST(从 calloutFunctions.obj 中)
+      已丢弃 FWPM_LAYER_OUTBOUND_TRANSPORT_FAST(从 calloutFunctions.obj 中)
+      已丢弃 FWPM_LAYER_INBOUND_MAC_FRAME_NATIVE_FAST(从 calloutFunctions.obj 中)
+      已丢弃 FWPM_LAYER_OUTBOUND_MAC_FRAME_NATIVE_FAST(从 calloutFunctions.obj 中)
+      已丢弃 FWPM_LAYER_IPSEC_KM_DEMUX_V4(从 calloutFunctions.obj 中)
+      已丢弃 FWPM_LAYER_IPSEC_KM_DEMUX_V6(从 calloutFunctions.obj 中)
+      已丢弃 FWPM_LAYER_IPSEC_V4(从 calloutFunctions.obj 中)
+      已丢弃 FWPM_LAYER_IPSEC_V6(从 calloutFunctions.obj 中)
+      已丢弃 FWPM_LAYER_IKEEXT_V4(从 calloutFunctions.obj 中)
+      已丢弃 FWPM_LAYER_IKEEXT_V6(从 calloutFunctions.obj 中)
+      已丢弃 FWPM_LAYER_RPC_UM(从 calloutFunctions.obj 中)
+      已丢弃 FWPM_LAYER_RPC_EPMAP(从 calloutFunctions.obj 中)
+      已丢弃 FWPM_LAYER_RPC_EP_ADD(从 calloutFunctions.obj 中)
+      已丢弃 FWPM_LAYER_RPC_PROXY_CONN(从 calloutFunctions.obj 中)
+      已丢弃 FWPM_LAYER_RPC_PROXY_IF(从 calloutFunctions.obj 中)
+      已丢弃 FWPM_LAYER_KM_AUTHORIZATION(从 calloutFunctions.obj 中)
+      已丢弃 FWPM_LAYER_NAME_RESOLUTION_CACHE_V4(从 calloutFunctions.obj 中)
+      已丢弃 FWPM_LAYER_NAME_RESOLUTION_CACHE_V6(从 calloutFunctions.obj 中)
+      已丢弃 FWPM_LAYER_ALE_RESOURCE_RELEASE_V4(从 calloutFunctions.obj 中)
+      已丢弃 FWPM_LAYER_ALE_RESOURCE_RELEASE_V6(从 calloutFunctions.obj 中)
+      已丢弃 FWPM_LAYER_ALE_ENDPOINT_CLOSURE_V4(从 calloutFunctions.obj 中)
+      已丢弃 FWPM_LAYER_ALE_ENDPOINT_CLOSURE_V6(从 calloutFunctions.obj 中)
+      已丢弃 FWPM_LAYER_ALE_CONNECT_REDIRECT_V4(从 calloutFunctions.obj 中)
+      已丢弃 FWPM_LAYER_ALE_CONNECT_REDIRECT_V6(从 calloutFunctions.obj 中)
+      已丢弃 FWPM_LAYER_ALE_BIND_REDIRECT_V4(从 calloutFunctions.obj 中)
+      已丢弃 FWPM_LAYER_ALE_BIND_REDIRECT_V6(从 calloutFunctions.obj 中)
+      已丢弃 FWPM_LAYER_STREAM_PACKET_V4(从 calloutFunctions.obj 中)
+      已丢弃 FWPM_LAYER_STREAM_PACKET_V6(从 calloutFunctions.obj 中)
+      已丢弃 FWPM_LAYER_INBOUND_RESERVED2(从 calloutFunctions.obj 中)
+      已丢弃 FWPM_SUBLAYER_RPC_AUDIT(从 calloutFunctions.obj 中)
+      已丢弃 FWPM_SUBLAYER_IPSEC_TUNNEL(从 calloutFunctions.obj 中)
+      已丢弃 FWPM_SUBLAYER_LIPS(从 calloutFunctions.obj 中)
+      已丢弃 FWPM_SUBLAYER_SECURE_SOCKET(从 calloutFunctions.obj 中)
+      已丢弃 FWPM_SUBLAYER_TCP_CHIMNEY_OFFLOAD(从 calloutFunctions.obj 中)
+      已丢弃 FWPM_SUBLAYER_INSPECTION(从 calloutFunctions.obj 中)
+      已丢弃 FWPM_SUBLAYER_TEREDO(从 calloutFunctions.obj 中)
+      已丢弃 FWPM_SUBLAYER_IPSEC_FORWARD_OUTBOUND_TUNNEL(从 calloutFunctions.obj 中)
+      已丢弃 FWPM_SUBLAYER_IPSEC_DOSP(从 calloutFunctions.obj 中)
+      已丢弃 FWPM_SUBLAYER_TCP_TEMPLATES(从 calloutFunctions.obj 中)
+      已丢弃 FWPM_SUBLAYER_IPSEC_SECURITY_REALM(从 calloutFunctions.obj 中)
+      已丢弃 FWPM_CONDITION_INTERFACE_MAC_ADDRESS(从 calloutFunctions.obj 中)
+      已丢弃 FWPM_CONDITION_MAC_LOCAL_ADDRESS(从 calloutFunctions.obj 中)
+      已丢弃 FWPM_CONDITION_MAC_REMOTE_ADDRESS(从 calloutFunctions.obj 中)
+      已丢弃 FWPM_CONDITION_ETHER_TYPE(从 calloutFunctions.obj 中)
+      已丢弃 FWPM_CONDITION_VLAN_ID(从 calloutFunctions.obj 中)
+      已丢弃 FWPM_CONDITION_VSWITCH_TENANT_NETWORK_ID(从 calloutFunctions.obj 中)
+      已丢弃 FWPM_CONDITION_NDIS_PORT(从 calloutFunctions.obj 中)
+      已丢弃 FWPM_CONDITION_NDIS_MEDIA_TYPE(从 calloutFunctions.obj 中)
+      已丢弃 FWPM_CONDITION_NDIS_PHYSICAL_MEDIA_TYPE(从 calloutFunctions.obj 中)
+      已丢弃 FWPM_CONDITION_L2_FLAGS(从 calloutFunctions.obj 中)
+      已丢弃 FWPM_CONDITION_MAC_LOCAL_ADDRESS_TYPE(从 calloutFunctions.obj 中)
+      已丢弃 FWPM_CONDITION_MAC_REMOTE_ADDRESS_TYPE(从 calloutFunctions.obj 中)
+      已丢弃 FWPM_CONDITION_ALE_PACKAGE_ID(从 calloutFunctions.obj 中)
+      已丢弃 FWPM_CONDITION_MAC_SOURCE_ADDRESS(从 calloutFunctions.obj 中)
+      已丢弃 FWPM_CONDITION_MAC_DESTINATION_ADDRESS(从 calloutFunctions.obj 中)
+      已丢弃 FWPM_CONDITION_MAC_SOURCE_ADDRESS_TYPE(从 calloutFunctions.obj 中)
+      已丢弃 FWPM_CONDITION_MAC_DESTINATION_ADDRESS_TYPE(从 calloutFunctions.obj 中)
+      已丢弃 FWPM_CONDITION_IP_SOURCE_PORT(从 calloutFunctions.obj 中)
+      已丢弃 FWPM_CONDITION_IP_DESTINATION_PORT(从 calloutFunctions.obj 中)
+      已丢弃 FWPM_CONDITION_VSWITCH_ID(从 calloutFunctions.obj 中)
+      已丢弃 FWPM_CONDITION_VSWITCH_NETWORK_TYPE(从 calloutFunctions.obj 中)
+      已丢弃 FWPM_CONDITION_VSWITCH_SOURCE_INTERFACE_ID(从 calloutFunctions.obj 中)
+      已丢弃 FWPM_CONDITION_VSWITCH_DESTINATION_INTERFACE_ID(从 calloutFunctions.obj 中)
+      已丢弃 FWPM_CONDITION_VSWITCH_SOURCE_VM_ID(从 calloutFunctions.obj 中)
+      已丢弃 FWPM_CONDITION_VSWITCH_DESTINATION_VM_ID(从 calloutFunctions.obj 中)
+      已丢弃 FWPM_CONDITION_VSWITCH_SOURCE_INTERFACE_TYPE(从 calloutFunctions.obj 中)
+      已丢弃 FWPM_CONDITION_VSWITCH_DESTINATION_INTERFACE_TYPE(从 calloutFunctions.obj 中)
+      已丢弃 FWPM_CONDITION_ALE_SECURITY_ATTRIBUTE_FQBN_VALUE(从 calloutFunctions.obj 中)
+      已丢弃 FWPM_CONDITION_IPSEC_SECURITY_REALM_ID(从 calloutFunctions.obj 中)
+      已丢弃 FWPM_CONDITION_ALE_EFFECTIVE_NAME(从 calloutFunctions.obj 中)
+      已丢弃 FWPM_CONDITION_IP_LOCAL_ADDRESS(从 calloutFunctions.obj 中)
+      已丢弃 FWPM_CONDITION_IP_REMOTE_ADDRESS(从 calloutFunctions.obj 中)
+      已丢弃 FWPM_CONDITION_IP_SOURCE_ADDRESS(从 calloutFunctions.obj 中)
+      已丢弃 FWPM_CONDITION_IP_DESTINATION_ADDRESS(从 calloutFunctions.obj 中)
+      已丢弃 FWPM_CONDITION_IP_LOCAL_ADDRESS_TYPE(从 calloutFunctions.obj 中)
+      已丢弃 FWPM_CONDITION_IP_DESTINATION_ADDRESS_TYPE(从 calloutFunctions.obj 中)
+      已丢弃 FWPM_CONDITION_BITMAP_IP_LOCAL_ADDRESS(从 calloutFunctions.obj 中)
+      已丢弃 FWPM_CONDITION_BITMAP_IP_LOCAL_PORT(从 calloutFunctions.obj 中)
+      已丢弃 FWPM_CONDITION_BITMAP_IP_REMOTE_ADDRESS(从 calloutFunctions.obj 中)
+      已丢弃 FWPM_CONDITION_BITMAP_IP_REMOTE_PORT(从 calloutFunctions.obj 中)
+      已丢弃 FWPM_CONDITION_IP_NEXTHOP_ADDRESS(从 calloutFunctions.obj 中)
+      已丢弃 FWPM_CONDITION_BITMAP_INDEX_KEY(从 calloutFunctions.obj 中)
+      已丢弃 FWPM_CONDITION_IP_LOCAL_INTERFACE(从 calloutFunctions.obj 中)
+      已丢弃 FWPM_CONDITION_IP_ARRIVAL_INTERFACE(从 calloutFunctions.obj 中)
+      已丢弃 FWPM_CONDITION_ARRIVAL_INTERFACE_TYPE(从 calloutFunctions.obj 中)
+      已丢弃 FWPM_CONDITION_ARRIVAL_TUNNEL_TYPE(从 calloutFunctions.obj 中)
+      已丢弃 FWPM_CONDITION_ARRIVAL_INTERFACE_INDEX(从 calloutFunctions.obj 中)
+      已丢弃 FWPM_CONDITION_NEXTHOP_SUB_INTERFACE_INDEX(从 calloutFunctions.obj 中)
+      已丢弃 FWPM_CONDITION_IP_NEXTHOP_INTERFACE(从 calloutFunctions.obj 中)
+      已丢弃 FWPM_CONDITION_NEXTHOP_INTERFACE_TYPE(从 calloutFunctions.obj 中)
+      已丢弃 FWPM_CONDITION_NEXTHOP_TUNNEL_TYPE(从 calloutFunctions.obj 中)
+      已丢弃 FWPM_CONDITION_NEXTHOP_INTERFACE_INDEX(从 calloutFunctions.obj 中)
+      已丢弃 FWPM_CONDITION_ORIGINAL_PROFILE_ID(从 calloutFunctions.obj 中)
+      已丢弃 FWPM_CONDITION_CURRENT_PROFILE_ID(从 calloutFunctions.obj 中)
+      已丢弃 FWPM_CONDITION_LOCAL_INTERFACE_PROFILE_ID(从 calloutFunctions.obj 中)
+      已丢弃 FWPM_CONDITION_ARRIVAL_INTERFACE_PROFILE_ID(从 calloutFunctions.obj 中)
+      已丢弃 FWPM_CONDITION_NEXTHOP_INTERFACE_PROFILE_ID(从 calloutFunctions.obj 中)
+      已丢弃 FWPM_CONDITION_REAUTHORIZE_REASON(从 calloutFunctions.obj 中)
+      已丢弃 FWPM_CONDITION_ORIGINAL_ICMP_TYPE(从 calloutFunctions.obj 中)
+      已丢弃 FWPM_CONDITION_IP_PHYSICAL_ARRIVAL_INTERFACE(从 calloutFunctions.obj 中)
+      已丢弃 FWPM_CONDITION_IP_PHYSICAL_NEXTHOP_INTERFACE(从 calloutFunctions.obj 中)
+      已丢弃 FWPM_CONDITION_INTERFACE_QUARANTINE_EPOCH(从 calloutFunctions.obj 中)
+      已丢弃 FWPM_CONDITION_INTERFACE_TYPE(从 calloutFunctions.obj 中)
+      已丢弃 FWPM_CONDITION_TUNNEL_TYPE(从 calloutFunctions.obj 中)
+      已丢弃 FWPM_CONDITION_IP_FORWARD_INTERFACE(从 calloutFunctions.obj 中)
+      已丢弃 FWPM_CONDITION_IP_PROTOCOL(从 calloutFunctions.obj 中)
+      已丢弃 FWPM_CONDITION_IP_LOCAL_PORT(从 calloutFunctions.obj 中)
+      已丢弃 FWPM_CONDITION_IP_REMOTE_PORT(从 calloutFunctions.obj 中)
+      已丢弃 FWPM_CONDITION_EMBEDDED_LOCAL_ADDRESS_TYPE(从 calloutFunctions.obj 中)
+      已丢弃 FWPM_CONDITION_EMBEDDED_REMOTE_ADDRESS(从 calloutFunctions.obj 中)
+      已丢弃 FWPM_CONDITION_EMBEDDED_PROTOCOL(从 calloutFunctions.obj 中)
+      已丢弃 FWPM_CONDITION_EMBEDDED_LOCAL_PORT(从 calloutFunctions.obj 中)
+      已丢弃 FWPM_CONDITION_EMBEDDED_REMOTE_PORT(从 calloutFunctions.obj 中)
+      已丢弃 FWPM_CONDITION_FLAGS(从 calloutFunctions.obj 中)
+      已丢弃 FWPM_CONDITION_DIRECTION(从 calloutFunctions.obj 中)
+      已丢弃 FWPM_CONDITION_INTERFACE_INDEX(从 calloutFunctions.obj 中)
+      已丢弃 FWPM_CONDITION_SUB_INTERFACE_INDEX(从 calloutFunctions.obj 中)
+      已丢弃 FWPM_CONDITION_SOURCE_INTERFACE_INDEX(从 calloutFunctions.obj 中)
+      已丢弃 FWPM_CONDITION_SOURCE_SUB_INTERFACE_INDEX(从 calloutFunctions.obj 中)
+      已丢弃 FWPM_CONDITION_DESTINATION_INTERFACE_INDEX(从 calloutFunctions.obj 中)
+      已丢弃 FWPM_CONDITION_DESTINATION_SUB_INTERFACE_INDEX(从 calloutFunctions.obj 中)
+      已丢弃 FWPM_CONDITION_ALE_APP_ID(从 calloutFunctions.obj 中)
+      已丢弃 FWPM_CONDITION_ALE_ORIGINAL_APP_ID(从 calloutFunctions.obj 中)
+      已丢弃 FWPM_CONDITION_ALE_USER_ID(从 calloutFunctions.obj 中)
+      已丢弃 FWPM_CONDITION_ALE_REMOTE_USER_ID(从 calloutFunctions.obj 中)
+      已丢弃 FWPM_CONDITION_ALE_REMOTE_MACHINE_ID(从 calloutFunctions.obj 中)
+      已丢弃 FWPM_CONDITION_ALE_PROMISCUOUS_MODE(从 calloutFunctions.obj 中)
+      已丢弃 FWPM_CONDITION_ALE_SIO_FIREWALL_SYSTEM_PORT(从 calloutFunctions.obj 中)
+      已丢弃 FWPM_CONDITION_ALE_REAUTH_REASON(从 calloutFunctions.obj 中)
+      已丢弃 FWPM_CONDITION_ALE_NAP_CONTEXT(从 calloutFunctions.obj 中)
+      已丢弃 FWPM_CONDITION_KM_AUTH_NAP_CONTEXT(从 calloutFunctions.obj 中)
+      已丢弃 FWPM_CONDITION_REMOTE_USER_TOKEN(从 calloutFunctions.obj 中)
+      已丢弃 FWPM_CONDITION_RPC_IF_UUID(从 calloutFunctions.obj 中)
+      已丢弃 FWPM_CONDITION_RPC_IF_VERSION(从 calloutFunctions.obj 中)
+      已丢弃 FWPM_CONDITION_RPC_IF_FLAG(从 calloutFunctions.obj 中)
+      已丢弃 FWPM_CONDITION_DCOM_APP_ID(从 calloutFunctions.obj 中)
+      已丢弃 FWPM_CONDITION_IMAGE_NAME(从 calloutFunctions.obj 中)
+      已丢弃 FWPM_CONDITION_RPC_PROTOCOL(从 calloutFunctions.obj 中)
+      已丢弃 FWPM_CONDITION_RPC_AUTH_TYPE(从 calloutFunctions.obj 中)
+      已丢弃 FWPM_CONDITION_RPC_AUTH_LEVEL(从 calloutFunctions.obj 中)
+      已丢弃 FWPM_CONDITION_SEC_ENCRYPT_ALGORITHM(从 calloutFunctions.obj 中)
+      已丢弃 FWPM_CONDITION_SEC_KEY_SIZE(从 calloutFunctions.obj 中)
+      已丢弃 FWPM_CONDITION_IP_LOCAL_ADDRESS_V4(从 calloutFunctions.obj 中)
+      已丢弃 FWPM_CONDITION_IP_LOCAL_ADDRESS_V6(从 calloutFunctions.obj 中)
+      已丢弃 FWPM_CONDITION_PIPE(从 calloutFunctions.obj 中)
+      已丢弃 FWPM_CONDITION_IP_REMOTE_ADDRESS_V4(从 calloutFunctions.obj 中)
+      已丢弃 FWPM_CONDITION_IP_REMOTE_ADDRESS_V6(从 calloutFunctions.obj 中)
+      已丢弃 FWPM_CONDITION_PROCESS_WITH_RPC_IF_UUID(从 calloutFunctions.obj 中)
+      已丢弃 FWPM_CONDITION_RPC_EP_VALUE(从 calloutFunctions.obj 中)
+      已丢弃 FWPM_CONDITION_RPC_EP_FLAGS(从 calloutFunctions.obj 中)
+      已丢弃 FWPM_CONDITION_CLIENT_TOKEN(从 calloutFunctions.obj 中)
+      已丢弃 FWPM_CONDITION_RPC_SERVER_NAME(从 calloutFunctions.obj 中)
+      已丢弃 FWPM_CONDITION_RPC_SERVER_PORT(从 calloutFunctions.obj 中)
+      已丢弃 FWPM_CONDITION_RPC_PROXY_AUTH_TYPE(从 calloutFunctions.obj 中)
+      已丢弃 FWPM_CONDITION_CLIENT_CERT_KEY_LENGTH(从 calloutFunctions.obj 中)
+      已丢弃 FWPM_CONDITION_CLIENT_CERT_OID(从 calloutFunctions.obj 中)
+      已丢弃 FWPM_CONDITION_NET_EVENT_TYPE(从 calloutFunctions.obj 中)
+      已丢弃 FWPM_CONDITION_PEER_NAME(从 calloutFunctions.obj 中)
+      已丢弃 FWPM_CONDITION_REMOTE_ID(从 calloutFunctions.obj 中)
+      已丢弃 FWPM_CONDITION_AUTHENTICATION_TYPE(从 calloutFunctions.obj 中)
+      已丢弃 FWPM_CONDITION_KM_TYPE(从 calloutFunctions.obj 中)
+      已丢弃 FWPM_CONDITION_KM_MODE(从 calloutFunctions.obj 中)
+      已丢弃 FWPM_CONDITION_IPSEC_POLICY_KEY(从 calloutFunctions.obj 中)
+      已丢弃 FWPM_CONDITION_QM_MODE(从 calloutFunctions.obj 中)
+      已丢弃 FWPM_CONDITION_COMPARTMENT_ID(从 calloutFunctions.obj 中)
+      已丢弃 FWPM_CONDITION_RESERVED0(从 calloutFunctions.obj 中)
+      已丢弃 FWPM_CONDITION_RESERVED1(从 calloutFunctions.obj 中)
+      已丢弃 FWPM_CONDITION_RESERVED2(从 calloutFunctions.obj 中)
+      已丢弃 FWPM_CONDITION_RESERVED3(从 calloutFunctions.obj 中)
+      已丢弃 FWPM_CONDITION_RESERVED4(从 calloutFunctions.obj 中)
+      已丢弃 FWPM_CONDITION_RESERVED5(从 calloutFunctions.obj 中)
+      已丢弃 FWPM_CONDITION_RESERVED6(从 calloutFunctions.obj 中)
+      已丢弃 FWPM_CONDITION_RESERVED7(从 calloutFunctions.obj 中)
+      已丢弃 FWPM_CONDITION_RESERVED8(从 calloutFunctions.obj 中)
+      已丢弃 FWPM_CONDITION_RESERVED9(从 calloutFunctions.obj 中)
+      已丢弃 FWPM_CONDITION_RESERVED10(从 calloutFunctions.obj 中)
+      已丢弃 FWPM_CONDITION_RESERVED11(从 calloutFunctions.obj 中)
+      已丢弃 FWPM_CONDITION_RESERVED12(从 calloutFunctions.obj 中)
+      已丢弃 FWPM_CONDITION_RESERVED13(从 calloutFunctions.obj 中)
+      已丢弃 FWPM_CONDITION_RESERVED14(从 calloutFunctions.obj 中)
+      已丢弃 FWPM_CONDITION_RESERVED15(从 calloutFunctions.obj 中)
+      已丢弃 FWPM_PROVIDER_IKEEXT(从 calloutFunctions.obj 中)
+      已丢弃 FWPM_PROVIDER_IPSEC_DOSP_CONFIG(从 calloutFunctions.obj 中)
+      已丢弃 FWPM_PROVIDER_TCP_CHIMNEY_OFFLOAD(从 calloutFunctions.obj 中)
+      已丢弃 FWPM_PROVIDER_TCP_TEMPLATES(从 calloutFunctions.obj 中)
+      已丢弃 FWPM_CALLOUT_IPSEC_INBOUND_TRANSPORT_V4(从 calloutFunctions.obj 中)
+      已丢弃 FWPM_CALLOUT_IPSEC_INBOUND_TRANSPORT_V6(从 calloutFunctions.obj 中)
+      已丢弃 FWPM_CALLOUT_IPSEC_OUTBOUND_TRANSPORT_V4(从 calloutFunctions.obj 中)
+      已丢弃 FWPM_CALLOUT_IPSEC_OUTBOUND_TRANSPORT_V6(从 calloutFunctions.obj 中)
+      已丢弃 FWPM_CALLOUT_IPSEC_INBOUND_TUNNEL_V4(从 calloutFunctions.obj 中)
+      已丢弃 FWPM_CALLOUT_IPSEC_INBOUND_TUNNEL_V6(从 calloutFunctions.obj 中)
+      已丢弃 FWPM_CALLOUT_IPSEC_OUTBOUND_TUNNEL_V4(从 calloutFunctions.obj 中)
+      已丢弃 FWPM_CALLOUT_IPSEC_OUTBOUND_TUNNEL_V6(从 calloutFunctions.obj 中)
+      已丢弃 FWPM_CALLOUT_IPSEC_FORWARD_INBOUND_TUNNEL_V4(从 calloutFunctions.obj 中)
+      已丢弃 FWPM_CALLOUT_IPSEC_FORWARD_INBOUND_TUNNEL_V6(从 calloutFunctions.obj 中)
+      已丢弃 FWPM_CALLOUT_IPSEC_FORWARD_OUTBOUND_TUNNEL_V4(从 calloutFunctions.obj 中)
+      已丢弃 FWPM_CALLOUT_IPSEC_FORWARD_OUTBOUND_TUNNEL_V6(从 calloutFunctions.obj 中)
+      已丢弃 FWPM_CALLOUT_IPSEC_INBOUND_INITIATE_SECURE_V4(从 calloutFunctions.obj 中)
+      已丢弃 FWPM_CALLOUT_IPSEC_INBOUND_INITIATE_SECURE_V6(从 calloutFunctions.obj 中)
+      已丢弃 FWPM_CALLOUT_IPSEC_INBOUND_TUNNEL_ALE_ACCEPT_V4(从 calloutFunctions.obj 中)
+      已丢弃 FWPM_CALLOUT_IPSEC_INBOUND_TUNNEL_ALE_ACCEPT_V6(从 calloutFunctions.obj 中)
+      已丢弃 FWPM_CALLOUT_IPSEC_ALE_CONNECT_V4(从 calloutFunctions.obj 中)
+      已丢弃 FWPM_CALLOUT_IPSEC_ALE_CONNECT_V6(从 calloutFunctions.obj 中)
+      已丢弃 FWPM_CALLOUT_IPSEC_DOSP_FORWARD_V6(从 calloutFunctions.obj 中)
+      已丢弃 FWPM_CALLOUT_IPSEC_DOSP_FORWARD_V4(从 calloutFunctions.obj 中)
+      已丢弃 FWPM_CALLOUT_WFP_TRANSPORT_LAYER_V4_SILENT_DROP(从 calloutFunctions.obj 中)
+      已丢弃 FWPM_CALLOUT_WFP_TRANSPORT_LAYER_V6_SILENT_DROP(从 calloutFunctions.obj 中)
+      已丢弃 FWPM_CALLOUT_TCP_CHIMNEY_CONNECT_LAYER_V4(从 calloutFunctions.obj 中)
+      已丢弃 FWPM_CALLOUT_TCP_CHIMNEY_CONNECT_LAYER_V6(从 calloutFunctions.obj 中)
+      已丢弃 FWPM_CALLOUT_TCP_CHIMNEY_ACCEPT_LAYER_V4(从 calloutFunctions.obj 中)
+      已丢弃 FWPM_CALLOUT_TCP_CHIMNEY_ACCEPT_LAYER_V6(从 calloutFunctions.obj 中)
+      已丢弃 FWPM_CALLOUT_SET_OPTIONS_AUTH_CONNECT_LAYER_V4(从 calloutFunctions.obj 中)
+      已丢弃 FWPM_CALLOUT_SET_OPTIONS_AUTH_CONNECT_LAYER_V6(从 calloutFunctions.obj 中)
+      已丢弃 FWPM_CALLOUT_SET_OPTIONS_AUTH_RECV_ACCEPT_LAYER_V4(从 calloutFunctions.obj 中)
+      已丢弃 FWPM_CALLOUT_SET_OPTIONS_AUTH_RECV_ACCEPT_LAYER_V6(从 calloutFunctions.obj 中)
+      已丢弃 FWPM_CALLOUT_RESERVED_AUTH_CONNECT_LAYER_V4(从 calloutFunctions.obj 中)
+      已丢弃 FWPM_CALLOUT_RESERVED_AUTH_CONNECT_LAYER_V6(从 calloutFunctions.obj 中)
+      已丢弃 FWPM_CALLOUT_TEREDO_ALE_RESOURCE_ASSIGNMENT_V6(从 calloutFunctions.obj 中)
+      已丢弃 FWPM_CALLOUT_EDGE_TRAVERSAL_ALE_RESOURCE_ASSIGNMENT_V4(从 calloutFunctions.obj 中)
+      已丢弃 FWPM_CALLOUT_TEREDO_ALE_LISTEN_V6(从 calloutFunctions.obj 中)
+      已丢弃 FWPM_CALLOUT_EDGE_TRAVERSAL_ALE_LISTEN_V4(从 calloutFunctions.obj 中)
+      已丢弃 FWPM_CALLOUT_TCP_TEMPLATES_CONNECT_LAYER_V4(从 calloutFunctions.obj 中)
+      已丢弃 FWPM_CALLOUT_TCP_TEMPLATES_CONNECT_LAYER_V6(从 calloutFunctions.obj 中)
+      已丢弃 FWPM_CALLOUT_TCP_TEMPLATES_ACCEPT_LAYER_V4(从 calloutFunctions.obj 中)
+      已丢弃 FWPM_CALLOUT_TCP_TEMPLATES_ACCEPT_LAYER_V6(从 calloutFunctions.obj 中)
+      已丢弃 FWPM_CALLOUT_POLICY_SILENT_MODE_AUTH_CONNECT_LAYER_V4(从 calloutFunctions.obj 中)
+      已丢弃 FWPM_CALLOUT_POLICY_SILENT_MODE_AUTH_CONNECT_LAYER_V6(从 calloutFunctions.obj 中)
+      已丢弃 FWPM_CALLOUT_POLICY_SILENT_MODE_AUTH_RECV_ACCEPT_LAYER_V4(从 calloutFunctions.obj 中)
+      已丢弃 FWPM_CALLOUT_POLICY_SILENT_MODE_AUTH_RECV_ACCEPT_LAYER_V6(从 calloutFunctions.obj 中)
+      已丢弃 FWPM_CALLOUT_HTTP_TEMPLATE_SSL_HANDSHAKE(从 calloutFunctions.obj 中)
+      已丢弃 FWPM_PROVIDER_CONTEXT_SECURE_SOCKET_AUTHIP(从 calloutFunctions.obj 中)
+      已丢弃 FWPM_PROVIDER_CONTEXT_SECURE_SOCKET_IPSEC(从 calloutFunctions.obj 中)
+      已丢弃 FWPM_KEYING_MODULE_IKE(从 calloutFunctions.obj 中)
+      已丢弃 FWPM_KEYING_MODULE_AUTHIP(从 calloutFunctions.obj 中)
+      已丢弃 FWPM_KEYING_MODULE_IKEV2(从 calloutFunctions.obj 中)
+      已丢弃 GUID_NWF_OFFLOAD_CAPABILITY(从 calloutFunctions.obj 中)
+      已丢弃 GUID_NWF_CURRENT_OFFLOAD_CAPABILITY(从 calloutFunctions.obj 中)
+      已丢弃 GUID_NWF_WEP_OFFLOAD(从 calloutFunctions.obj 中)
+      已丢弃 GUID_NWF_WEP_UPLOAD(从 calloutFunctions.obj 中)
+      已丢弃 GUID_NWF_DEFAULT_WEP_OFFLOAD(从 calloutFunctions.obj 中)
+      已丢弃 GUID_NWF_DEFAULT_WEP_UPLOAD(从 calloutFunctions.obj 中)
+      已丢弃 GUID_NWF_MPDU_MAX_LENGTH(从 calloutFunctions.obj 中)
+      已丢弃 GUID_NWF_OPERATION_MODE_CAPABILITY(从 calloutFunctions.obj 中)
+      已丢弃 GUID_NWF_CURRENT_OPERATION_MODE(从 calloutFunctions.obj 中)
+      已丢弃 GUID_NWF_CURRENT_PACKET_FILTER(从 calloutFunctions.obj 中)
+      已丢弃 GUID_NWF_ATIM_WINDOW(从 calloutFunctions.obj 中)
+      已丢弃 GUID_NWF_SCAN_REQUEST(从 calloutFunctions.obj 中)
+      已丢弃 GUID_NWF_CURRENT_PHY_TYPE(从 calloutFunctions.obj 中)
+      已丢弃 GUID_NWF_JOIN_REQUEST(从 calloutFunctions.obj 中)
+      已丢弃 GUID_NWF_START_REQUEST(从 calloutFunctions.obj 中)
+      已丢弃 GUID_NWF_UPDATE_IE(从 calloutFunctions.obj 中)
+      已丢弃 GUID_NWF_RESET_REQUEST(从 calloutFunctions.obj 中)
+      已丢弃 GUID_NWF_NIC_POWER_STATE(从 calloutFunctions.obj 中)
+      已丢弃 GUID_NWF_OPTIONAL_CAPABILITY(从 calloutFunctions.obj 中)
+      已丢弃 GUID_NWF_CURRENT_OPTIONAL_CAPABILITY(从 calloutFunctions.obj 中)
+      已丢弃 GUID_NWF_STATION_ID(从 calloutFunctions.obj 中)
+      已丢弃 GUID_NWF_MEDIUM_OCCUPANCY_LIMIT(从 calloutFunctions.obj 中)
+      已丢弃 GUID_NWF_CF_POLLABLE(从 calloutFunctions.obj 中)
+      已丢弃 GUID_NWF_CFP_PERIOD(从 calloutFunctions.obj 中)
+      已丢弃 GUID_NWF_CFP_MAX_DURATION(从 calloutFunctions.obj 中)
+      已丢弃 GUID_NWF_POWER_MGMT_MODE(从 calloutFunctions.obj 中)
+      已丢弃 GUID_NWF_OPERATIONAL_RATE_SET(从 calloutFunctions.obj 中)
+      已丢弃 GUID_NWF_BEACON_PERIOD(从 calloutFunctions.obj 中)
+      已丢弃 GUID_NWF_DTIM_PERIOD(从 calloutFunctions.obj 中)
+      已丢弃 GUID_NWF_WEP_ICV_ERROR_COUNT(从 calloutFunctions.obj 中)
+      已丢弃 GUID_NWF_MAC_ADDRESS(从 calloutFunctions.obj 中)
+      已丢弃 GUID_NWF_RTS_THRESHOLD(从 calloutFunctions.obj 中)
+      已丢弃 GUID_NWF_SHORT_RETRY_LIMIT(从 calloutFunctions.obj 中)
+      已丢弃 GUID_NWF_LONG_RETRY_LIMIT(从 calloutFunctions.obj 中)
+      已丢弃 GUID_NWF_FRAGMENTATION_THRESHOLD(从 calloutFunctions.obj 中)
+      已丢弃 GUID_NWF_MAX_TRANSMIT_MSDU_LIFETIME(从 calloutFunctions.obj 中)
+      已丢弃 GUID_NWF_MAX_RECEIVE_LIFETIME(从 calloutFunctions.obj 中)
+      已丢弃 GUID_NWF_COUNTERS_ENTRY(从 calloutFunctions.obj 中)
+      已丢弃 GUID_NWF_SUPPORTED_PHY_TYPES(从 calloutFunctions.obj 中)
+      已丢弃 GUID_NWF_CURRENT_REG_DOMAIN(从 calloutFunctions.obj 中)
+      已丢弃 GUID_NWF_TEMP_TYPE(从 calloutFunctions.obj 中)
+      已丢弃 GUID_NWF_CURRENT_TX_ANTENNA(从 calloutFunctions.obj 中)
+      已丢弃 GUID_NWF_DIVERSITY_SUPPORT(从 calloutFunctions.obj 中)
+      已丢弃 GUID_NWF_CURRENT_RX_ANTENNA(从 calloutFunctions.obj 中)
+      已丢弃 GUID_NWF_SUPPORTED_POWER_LEVELS(从 calloutFunctions.obj 中)
+      已丢弃 GUID_NWF_CURRENT_TX_POWER_LEVEL(从 calloutFunctions.obj 中)
+      已丢弃 GUID_NWF_HOP_TIME(从 calloutFunctions.obj 中)
+      已丢弃 GUID_NWF_CURRENT_CHANNEL_NUMBER(从 calloutFunctions.obj 中)
+      已丢弃 GUID_NWF_MAX_DWELL_TIME(从 calloutFunctions.obj 中)
+      已丢弃 GUID_NWF_CURRENT_DWELL_TIME(从 calloutFunctions.obj 中)
+      已丢弃 GUID_NWF_CURRENT_SET(从 calloutFunctions.obj 中)
+      已丢弃 GUID_NWF_CURRENT_PATTERN(从 calloutFunctions.obj 中)
+      已丢弃 GUID_NWF_CURRENT_INDEX(从 calloutFunctions.obj 中)
+      已丢弃 GUID_NWF_CURRENT_CHANNEL(从 calloutFunctions.obj 中)
+      已丢弃 GUID_NWF_CCA_MODE_SUPPORTED(从 calloutFunctions.obj 中)
+      已丢弃 GUID_NWF_CURRENT_CCA_MODE(从 calloutFunctions.obj 中)
+      已丢弃 GUID_NWF_ED_THRESHOLD(从 calloutFunctions.obj 中)
+      已丢弃 GUID_NWF_CCA_WATCHDOG_TIMER_MAX(从 calloutFunctions.obj 中)
+      已丢弃 GUID_NWF_CCA_WATCHDOG_COUNT_MAX(从 calloutFunctions.obj 中)
+      已丢弃 GUID_NWF_CCA_WATCHDOG_TIMER_MIN(从 calloutFunctions.obj 中)
+      已丢弃 GUID_NWF_CCA_WATCHDOG_COUNT_MIN(从 calloutFunctions.obj 中)
+      已丢弃 GUID_NWF_REG_DOMAINS_SUPPORT_VALUE(从 calloutFunctions.obj 中)
+      已丢弃 GUID_NWF_SUPPORTED_TX_ANTENNA(从 calloutFunctions.obj 中)
+      已丢弃 GUID_NWF_SUPPORTED_RX_ANTENNA(从 calloutFunctions.obj 中)
+      已丢弃 GUID_NWF_DIVERSITY_SELECTION_RX(从 calloutFunctions.obj 中)
+      已丢弃 GUID_NWF_SUPPORTED_DATA_RATES_VALUE(从 calloutFunctions.obj 中)
+      已丢弃 GUID_NWF_CURRENT_FREQUENCY(从 calloutFunctions.obj 中)
+      已丢弃 GUID_NWF_TI_THRESHOLD(从 calloutFunctions.obj 中)
+      已丢弃 GUID_NWF_FREQUENCY_BANDS_SUPPORTED(从 calloutFunctions.obj 中)
+      已丢弃 GUID_NWF_SHORT_PREAMBLE_OPTION_IMPLEMENTED(从 calloutFunctions.obj 中)
+      已丢弃 GUID_NWF_PBCC_OPTION_IMPLEMENTED(从 calloutFunctions.obj 中)
+      已丢弃 GUID_NWF_CHANNEL_AGILITY_PRESENT(从 calloutFunctions.obj 中)
+      已丢弃 GUID_NWF_CHANNEL_AGILITY_ENABLED(从 calloutFunctions.obj 中)
+      已丢弃 GUID_NWF_HR_CCA_MODE_SUPPORTED(从 calloutFunctions.obj 中)
+      已丢弃 GUID_NWF_MULTI_DOMAIN_CAPABILITY_IMPLEMENTED(从 calloutFunctions.obj 中)
+      已丢弃 GUID_NWF_MULTI_DOMAIN_CAPABILITY_ENABLED(从 calloutFunctions.obj 中)
+      已丢弃 GUID_NWF_COUNTRY_STRING(从 calloutFunctions.obj 中)
+      已丢弃 GUID_NWF_MULTI_DOMAIN_CAPABILITY(从 calloutFunctions.obj 中)
+      已丢弃 GUID_NWF_EHCC_PRIME_RADIX(从 calloutFunctions.obj 中)
+      已丢弃 GUID_NWF_EHCC_NUMBER_OF_CHANNELS_FAMILY_INDEX(从 calloutFunctions.obj 中)
+      已丢弃 GUID_NWF_EHCC_CAPABILITY_IMPLEMENTED(从 calloutFunctions.obj 中)
+      已丢弃 GUID_NWF_EHCC_CAPABILITY_ENABLED(从 calloutFunctions.obj 中)
+      已丢弃 GUID_NWF_HOP_ALGORITHM_ADOPTED(从 calloutFunctions.obj 中)
+      已丢弃 GUID_NWF_RANDOM_TABLE_FLAG(从 calloutFunctions.obj 中)
+      已丢弃 GUID_NWF_NUMBER_OF_HOPPING_SETS(从 calloutFunctions.obj 中)
+      已丢弃 GUID_NWF_HOP_MODULUS(从 calloutFunctions.obj 中)
+      已丢弃 GUID_NWF_HOP_OFFSET(从 calloutFunctions.obj 中)
+      已丢弃 GUID_NWF_HOPPING_PATTERN(从 calloutFunctions.obj 中)
+      已丢弃 GUID_NWF_RANDOM_TABLE_FIELD_NUMBER(从 calloutFunctions.obj 中)
+      已丢弃 GUID_NWF_WPA_TSC(从 calloutFunctions.obj 中)
+      已丢弃 GUID_NWF_RSSI_RANGE(从 calloutFunctions.obj 中)
+      已丢弃 GUID_NWF_RF_USAGE(从 calloutFunctions.obj 中)
+      已丢弃 GUID_NWF_NIC_SPECIFIC_EXTENSION(从 calloutFunctions.obj 中)
+      已丢弃 GUID_NWF_AP_JOIN_REQUEST(从 calloutFunctions.obj 中)
+      已丢弃 GUID_NWF_ERP_PBCC_OPTION_IMPLEMENTED(从 calloutFunctions.obj 中)
+      已丢弃 GUID_NWF_ERP_PBCC_OPTION_ENABLED(从 calloutFunctions.obj 中)
+      已丢弃 GUID_NWF_DSSS_OFDM_OPTION_IMPLEMENTED(从 calloutFunctions.obj 中)
+      已丢弃 GUID_NWF_DSSS_OFDM_OPTION_ENABLED(从 calloutFunctions.obj 中)
+      已丢弃 GUID_NWF_SHORT_SLOT_TIME_OPTION_IMPLEMENTED(从 calloutFunctions.obj 中)
+      已丢弃 GUID_NWF_SHORT_SLOT_TIME_OPTION_ENABLED(从 calloutFunctions.obj 中)
+      已丢弃 GUID_NWF_MAX_MAC_ADDRESS_STATES(从 calloutFunctions.obj 中)
+      已丢弃 GUID_NWF_RECV_SENSITIVITY_LIST(从 calloutFunctions.obj 中)
+      已丢弃 GUID_NWF_WME_IMPLEMENTED(从 calloutFunctions.obj 中)
+      已丢弃 GUID_NWF_WME_ENABLED(从 calloutFunctions.obj 中)
+      已丢弃 GUID_NWF_WME_AC_PARAMETERS(从 calloutFunctions.obj 中)
+      已丢弃 GUID_NWF_WME_UPDATE_IE(从 calloutFunctions.obj 中)
+      已丢弃 GUID_NWF_QOS_TX_QUEUES_SUPPORTED(从 calloutFunctions.obj 中)
+      已丢弃 GUID_NWF_QOS_TX_DURATION(从 calloutFunctions.obj 中)
+      已丢弃 GUID_NWF_QOS_TX_MEDIUM_TIME(从 calloutFunctions.obj 中)
+      已丢弃 GUID_NWF_SUPPORTED_OFDM_FREQUENCY_LIST(从 calloutFunctions.obj 中)
+      已丢弃 GUID_NWF_SUPPORTED_DSSS_CHANNEL_LIST(从 calloutFunctions.obj 中)
+      已丢弃 GUID_NWF_AUTO_CONFIG_ENABLED(从 calloutFunctions.obj 中)
+      已丢弃 GUID_NWF_ENUM_BSS_LIST(从 calloutFunctions.obj 中)
+      已丢弃 GUID_NWF_FLUSH_BSS_LIST(从 calloutFunctions.obj 中)
+      已丢弃 GUID_NWF_POWER_MGMT_REQUEST(从 calloutFunctions.obj 中)
+      已丢弃 GUID_NWF_DESIRED_SSID_LIST(从 calloutFunctions.obj 中)
+      已丢弃 GUID_NWF_EXCLUDED_MAC_ADDRESS_LIST(从 calloutFunctions.obj 中)
+      已丢弃 GUID_NWF_DESIRED_BSSID_LIST(从 calloutFunctions.obj 中)
+      已丢弃 GUID_NWF_DESIRED_BSS_TYPE(从 calloutFunctions.obj 中)
+      已丢弃 GUID_NWF_PMKID_LIST(从 calloutFunctions.obj 中)
+      已丢弃 GUID_NWF_CONNECT_REQUEST(从 calloutFunctions.obj 中)
+      已丢弃 GUID_NWF_EXCLUDE_UNENCRYPTED(从 calloutFunctions.obj 中)
+      已丢弃 GUID_NWF_STATISTICS(从 calloutFunctions.obj 中)
+      已丢弃 GUID_NWF_PRIVACY_EXEMPTION_LIST(从 calloutFunctions.obj 中)
+      已丢弃 GUID_NWF_ENABLED_AUTHENTICATION_ALGORITHM(从 calloutFunctions.obj 中)
+      已丢弃 GUID_NWF_SUPPORTED_UNICAST_ALGORITHM_PAIR(从 calloutFunctions.obj 中)
+      已丢弃 GUID_NWF_ENABLED_UNICAST_CIPHER_ALGORITHM(从 calloutFunctions.obj 中)
+      已丢弃 GUID_NWF_SUPPORTED_MULTICAST_ALGORITHM_PAIR(从 calloutFunctions.obj 中)
+      已丢弃 GUID_NWF_ENABLED_MULTICAST_CIPHER_ALGORITHM(从 calloutFunctions.obj 中)
+      已丢弃 GUID_NWF_CIPHER_DEFAULT_KEY_ID(从 calloutFunctions.obj 中)
+      已丢弃 GUID_NWF_CIPHER_DEFAULT_KEY(从 calloutFunctions.obj 中)
+      已丢弃 GUID_NWF_CIPHER_KEY_MAPPING_KEY(从 calloutFunctions.obj 中)
+      已丢弃 GUID_NWF_ENUM_ASSOCIATION_INFO(从 calloutFunctions.obj 中)
+      已丢弃 GUID_NWF_DISCONNECT_REQUEST(从 calloutFunctions.obj 中)
+      已丢弃 GUID_NWF_UNICAST_USE_GROUP_ENABLED(从 calloutFunctions.obj 中)
+      已丢弃 GUID_NWF_PHY_STATE(从 calloutFunctions.obj 中)
+      已丢弃 GUID_NWF_DESIRED_PHY_LIST(从 calloutFunctions.obj 中)
+      已丢弃 GUID_NWF_CURRENT_PHY_ID(从 calloutFunctions.obj 中)
+      已丢弃 GUID_NWF_MEDIA_STREAMING_ENABLED(从 calloutFunctions.obj 中)
+      已丢弃 GUID_NWF_UNREACHABLE_DETECTION_THRESHOLD(从 calloutFunctions.obj 中)
+      已丢弃 GUID_NWF_ACTIVE_PHY_LIST(从 calloutFunctions.obj 中)
+      已丢弃 GUID_NWF_EXTSTA_CAPABILITY(从 calloutFunctions.obj 中)
+      已丢弃 GUID_NWF_DATA_RATE_MAPPING_TABLE(从 calloutFunctions.obj 中)
+      已丢弃 GUID_NWF_SUPPORTED_COUNTRY_OR_REGION_STRING(从 calloutFunctions.obj 中)
+      已丢弃 GUID_NWF_DESIRED_COUNTRY_OR_REGION_STRING(从 calloutFunctions.obj 中)
+      已丢弃 GUID_NWF_PORT_STATE_NOTIFICATION(从 calloutFunctions.obj 中)
+      已丢弃 GUID_NWF_IBSS_PARAMS(从 calloutFunctions.obj 中)
+      已丢弃 GUID_NWF_QOS_PARAMS(从 calloutFunctions.obj 中)
+      已丢弃 GUID_NWF_SAFE_MODE_ENABLED(从 calloutFunctions.obj 中)
+      已丢弃 GUID_NWF_HIDDEN_NETWORK_ENABLED(从 calloutFunctions.obj 中)
+      已丢弃 GUID_NWF_ASSOCIATION_PARAMS(从 calloutFunctions.obj 中)
+      已丢弃 GUID_NWF_CURRENT_ADDRESS(从 calloutFunctions.obj 中)
+      已丢弃 GUID_NWF_PERMANENT_ADDRESS(从 calloutFunctions.obj 中)
+      已丢弃 GUID_NWF_MULTICAST_LIST(从 calloutFunctions.obj 中)
+      已丢弃 GUID_NWF_MAXIMUM_LIST_SIZE(从 calloutFunctions.obj 中)
+      已丢弃 SDDL_DEVOBJ_SYS_ALL_buffer(从 WDMSec.lib(iosddl.obj) 中)
+      已丢弃 SDDL_DEVOBJ_SYS_ALL_ADM_RWX_WORLD_R(从 WDMSec.lib(iosddl.obj) 中)
+      已丢弃 SDDL_DEVOBJ_SYS_ALL_ADM_RWX_WORLD_R_buffer(从 WDMSec.lib(iosddl.obj) 中)
+      已丢弃 SDDL_DEVOBJ_KERNEL_ONLY(从 WDMSec.lib(iosddl.obj) 中)
+      已丢弃 SDDL_DEVOBJ_KERNEL_ONLY_buffer(从 WDMSec.lib(iosddl.obj) 中)
+      已丢弃 SDDL_DEVOBJ_SYS_ALL_ADM_RWX_WORLD_RWX_RES_RWX(从 WDMSec.lib(iosddl.obj) 中)
+      已丢弃 SDDL_DEVOBJ_SYS_ALL(从 WDMSec.lib(iosddl.obj) 中)
+      已丢弃 SDDL_DEVOBJ_SYS_ALL_ADM_RX_buffer(从 WDMSec.lib(iosddl.obj) 中)
+      已丢弃 SDDL_DEVOBJ_SYS_ALL_ADM_RWX_WORLD_R_RES_R_buffer(从 WDMSec.lib(iosddl.obj) 中)
+      已丢弃 SDDL_DEVOBJ_SYS_ALL_ADM_RWX_WORLD_RW_RES_R_buffer(从 WDMSec.lib(iosddl.obj) 中)
+      已丢弃 SDDL_DEVOBJ_SYS_ALL_ADM_RX(从 WDMSec.lib(iosddl.obj) 中)
+      已丢弃 SDDL_DEVOBJ_SYS_ALL_ADM_RWX_WORLD_RW_RES_R(从 WDMSec.lib(iosddl.obj) 中)
+      已丢弃 SDDL_DEVOBJ_SYS_ALL_ADM_RWX_WORLD_R_RES_R(从 WDMSec.lib(iosddl.obj) 中)
+      已丢弃 SDDL_DEVOBJ_SYS_ALL_ADM_RWX_WORLD_RWX_RES_RWX_buffer(从 WDMSec.lib(iosddl.obj) 中)
+      已丢弃 WdfDumpGuid2(从 WdfDriverEntry.lib(stub.obj) 中)
+      已丢弃 WdfDumpGuid(从 WdfDriverEntry.lib(stub.obj) 中)
+      已丢弃 GUID_WDF_LOADER_INTERFACE_DIAGNOSTIC(从 WdfDriverEntry.lib(stub.obj) 中)
+      已丢弃 GUID_WDF_LOADER_INTERFACE_STANDARD(从 WdfDriverEntry.lib(stub.obj) 中)
+      已丢弃 WdfTraceGuid(从 WdfDriverEntry.lib(stub.obj) 中)
+      已丢弃 GUID_WDF_LOADER_INTERFACE_CLASS_BIND(从 WdfDriverEntry.lib(stub.obj) 中)
+      已丢弃 $unwind$ProtocolIdToName(从 calloutFunctions.obj 中)
+      已丢弃 ExDefaultMdlProtection(从 WdfDriverEntry.lib(stub.obj) 中)
+      已丢弃 ExDefaultNonPagedPoolType(从 WdfDriverEntry.lib(stub.obj) 中)
+      已丢弃 $pdata$ProtocolIdToName(从 calloutFunctions.obj 中)
+      已丢弃“.idata$4”(从 NTOSKrnl.lib(ntoskrnl.exe) 中)
+      已丢弃 __imp_strcpy_s(从 NTOSKrnl.lib(ntoskrnl.exe) 中)
+      已丢弃“.idata$6”(从 NTOSKrnl.lib(ntoskrnl.exe) 中)
+      已丢弃 ProtocolIdToName(从 calloutFunctions.obj 中)
+      已丢弃 strcpy_s(从 NTOSKrnl.lib(ntoskrnl.exe) 中)
+      已丢弃 KeSetEvent(从 NTOSKrnl.lib(ntoskrnl.exe) 中)
+      已丢弃 ExAllocatePoolWithTag(从 NTOSKrnl.lib(ntoskrnl.exe) 中)
+      已丢弃 ExFreePoolWithTag(从 NTOSKrnl.lib(ntoskrnl.exe) 中)
+      已丢弃 ExInterlockedInsertTailList(从 NTOSKrnl.lib(ntoskrnl.exe) 中)
+      已丢弃 MmMapLockedPagesSpecifyCache(从 NTOSKrnl.lib(ntoskrnl.exe) 中)
+      已丢弃 RtlInitUnicodeString(从 NTOSKrnl.lib(ntoskrnl.exe) 中)
+      已丢弃 KeInitializeSpinLock(从 NTOSKrnl.lib(ntoskrnl.exe) 中)
+      已丢弃 ReadNoFence64(从 NTOSKrnl.lib(guard_support.obj) 中)
+      已丢弃 ReadPointerNoFence(从 NTOSKrnl.lib(guard_support.obj) 中)
+      已丢弃 _guard_icall_checks_enforced(从 NTOSKrnl.lib(guard_support.obj) 中)
+      已丢弃 _guard_rf_checks_enforced(从 NTOSKrnl.lib(guard_support.obj) 中)
+      已丢弃 ExInterlockedRemoveHeadList(从 NTOSKrnl.lib(ntoskrnl.exe) 中)
+      已丢弃 ObReferenceObjectByHandle(从 NTOSKrnl.lib(ntoskrnl.exe) 中)
+      已丢弃 ExAllocatePool(从 NTOSKrnl.lib(ntoskrnl.exe) 中)
+      已丢弃 ZwClose(从 NTOSKrnl.lib(ntoskrnl.exe) 中)
+      已丢弃 ZwOpenKey(从 NTOSKrnl.lib(ntoskrnl.exe) 中)
+      已丢弃 ZwEnumerateValueKey(从 NTOSKrnl.lib(ntoskrnl.exe) 中)
+      已丢弃 ZwQueryKey(从 NTOSKrnl.lib(ntoskrnl.exe) 中)
+      已丢弃 RtlFailFast(从 BufferOverflowFastFailK.lib(gs_support.obj) 中)
+      已丢弃 __report_rangecheckfailure(从 BufferOverflowFastFailK.lib(gs_report.obj) 中)
+      已丢弃 __report_securityfailure(从 BufferOverflowFastFailK.lib(gs_report.obj) 中)
+      已丢弃 RtlCopyUnicodeString(从 NTOSKrnl.lib(ntoskrnl.exe) 中)
+      已丢弃 " ?? ?? ::FNODOBFM::`string'" (??_C@_04CHGGIGMO@ICMP@FNODOBFM@)(从 calloutFunctions.obj 中)
+      已丢弃 " ?? ?? ::FNODOBFM::`string'" (??_C@_04KIAEBBJJ@IGMP@FNODOBFM@)(从 calloutFunctions.obj 中)
+      已丢弃 " ?? ?? ::FNODOBFM::`string'" (??_C@_03FCLDNGNL@TCP@FNODOBFM@)(从 calloutFunctions.obj 中)
+      已丢弃 " ?? ?? ::FNODOBFM::`string'" (??_C@_03OPEAKHDL@UDP@FNODOBFM@)(从 calloutFunctions.obj 中)
+      已丢弃 " ?? ?? ::FNODOBFM::`string'" (??_C@_03HCJHJPIC@RDP@FNODOBFM@)(从 calloutFunctions.obj 中)
+      已丢弃 " ?? ?? ::FNODOBFM::`string'" (??_C@_07NFANNNEC@UNKNOWN@FNODOBFM@)(从 calloutFunctions.obj 中)
+  
+    已选择符号:
+      Capture2FlowDelete1 (在 calloutFunctions.obj 中)
+    已替换符号:
+      Capture2FlowDelete2 (在 calloutFunctions.obj 中)
+  
+    已选择符号:
+      Capture2Notify1 (在 calloutFunctions.obj 中)
+    已替换符号:
+      Capture2Notify2 (在 calloutFunctions.obj 中)
+  
+    已选择符号:
+      $unwind$Capture2Notify1 (在 calloutFunctions.obj 中)
+    已替换符号:
+      $unwind$Capture2Notify2 (在 calloutFunctions.obj 中)
+  
+    已选择符号:
+      $unwind$WdfDeviceWdmGetDeviceObject (在 Capture2.obj 中)
+    已替换符号:
+      $unwind$WdfControlFinishInitializing (在 Capture2.obj 中)
+      $unwind$Capture2BlockPacket (在 iprules.obj 中)
+      $unwind$WdfDeviceInitFree (在 Capture2.obj 中)
+  
+    已选择符号:
+      $unwind$Capture2DriverUnload (在 Capture2.obj 中)
+    已替换符号:
+      $unwind$EvFileClose (在 io.obj 中)
+      $unwind$EvFileCleanup (在 io.obj 中)
+  
+    已选择符号:
+      $unwind$WdfDeviceInitSetFileObjectConfig (在 Capture2.obj 中)
+    已替换符号:
+      $unwind$WdfDeviceCreate (在 Capture2.obj 中)
+  
+    已选择符号:
+      $unwind$WdfDeviceInitSetCharacteristics (在 Capture2.obj 中)
+    已替换符号:
+      $unwind$WdfRequestCompleteWithInformation (在 io.obj 中)
+  
+    已选择符号:
+      $unwind$MmGetSystemAddressForMdlSafe (在 calloutFunctions.obj 中)
+    已替换符号:
+      $unwind$WdfRequestComplete (在 io.obj 中)
+      $unwind$WdfDeviceInitSetDeviceType (在 Capture2.obj 中)
+  
+    已选择符号:
+      $unwind$Capture2Classify2 (在 calloutFunctions.obj 中)
+    已替换符号:
+      $unwind$WdfDriverCreate (在 Capture2.obj 中)
+  
+    已选择符号:
+      $unwind$WdfDeviceInitAssignName (在 Capture2.obj 中)
+    已替换符号:
+      $unwind$WdfDeviceCreateSymbolicLink (在 Capture2.obj 中)
+      $unwind$WdfControlDeviceInitAllocate (在 Capture2.obj 中)
+  
+    已选择符号:
+      $unwind$StringVPrintfWorkerA (在 calloutFunctions.obj 中)
+    已替换符号:
+      $unwind$WdfIoQueueCreate (在 Capture2.obj 中)
+      $unwind$WdfRequestRetrieveInputBuffer (在 io.obj 中)
+      $unwind$WdfRequestRetrieveOutputBuffer (在 io.obj 中)
+      $unwind$StringCchPrintfA (在 calloutFunctions.obj 中)
+  
+    已选择符号:
+      $unwind$InitGlobals (在 Capture2.obj 中)
+    已替换符号:
+      $unwind$?FxStubDriverUnloadCommon@@YAXXZ (在 WdfDriverEntry.lib(stub.obj) 中)
+      $unwind$FxStubDriverMiniportUnload (在 WdfDriverEntry.lib(stub.obj) 中)
+      $unwind$__GSHandlerCheckCommon (在 NTOSKrnl.lib(gshandler.obj) 中)
+      $unwind$__GSHandlerCheck (在 NTOSKrnl.lib(gshandler.obj) 中)
+      $unwind$Capture2UnregisterCallout (在 registerCallouts.obj 中)
+      $unwind$FxStubDriverUnload (在 WdfDriverEntry.lib(stub.obj) 中)
+  
+    已选择符号:
+      $unwind$Capture2RegisterCalloutForLayer1 (在 registerCallouts.obj 中)
+    已替换符号:
+      $unwind$Capture2RegisterCalloutForLayer2 (在 registerCallouts.obj 中)
+  
+    已选择符号:
+      $pdata$Capture2Notify1 (在 calloutFunctions.obj 中)
+    已替换符号:
+      $pdata$Capture2Notify2 (在 calloutFunctions.obj 中)
+  
+    ICF 总节省量: 402 字节
+  
+  正在启动传递 2
+       registerCallouts.obj
+       iprules.obj
+       io.obj
+       Capture2.obj
+       calloutFunctions.obj
+       NTOSKrnl.lib(guard_support.obj)
+       NTOSKrnl.lib(guard_dispatch.obj)
+       NTOSKrnl.lib(ntoskrnl.exe)
+       NTOSKrnl.lib(ntoskrnl.exe)
+       NTOSKrnl.lib(ntoskrnl.exe)
+       NTOSKrnl.lib(ntoskrnl.exe)
+       NTOSKrnl.lib(ntoskrnl.exe)
+       NTOSKrnl.lib(ntoskrnl.exe)
+       NTOSKrnl.lib(ntoskrnl.exe)
+       NTOSKrnl.lib(ntoskrnl.exe)
+       NTOSKrnl.lib(ntoskrnl.exe)
+       NTOSKrnl.lib(ntoskrnl.exe)
+       NTOSKrnl.lib(ntoskrnl.exe)
+       NTOSKrnl.lib(ntoskrnl.exe)
+       NTOSKrnl.lib(ntoskrnl.exe)
+       NTOSKrnl.lib(ntoskrnl.exe)
+       NTOSKrnl.lib(ntoskrnl.exe)
+       NTOSKrnl.lib(ntoskrnl.exe)
+       NTOSKrnl.lib(ntoskrnl.exe)
+       NTOSKrnl.lib(ntoskrnl.exe)
+       NTOSKrnl.lib(ntoskrnl.exe)
+       NTOSKrnl.lib(ntoskrnl.exe)
+       NTOSKrnl.lib(ntoskrnl.exe)
+       NTOSKrnl.lib(ntoskrnl.exe)
+       NTOSKrnl.lib(gshandler.obj)
+       FwpKClnt.lib(fwpkclnt.sys)
+       FwpKClnt.lib(fwpkclnt.sys)
+       FwpKClnt.lib(fwpkclnt.sys)
+       FwpKClnt.lib(fwpkclnt.sys)
+       FwpKClnt.lib(fwpkclnt.sys)
+       FwpKClnt.lib(fwpkclnt.sys)
+       FwpKClnt.lib(fwpkclnt.sys)
+       FwpKClnt.lib(fwpkclnt.sys)
+       FwpKClnt.lib(fwpkclnt.sys)
+       FwpKClnt.lib(fwpkclnt.sys)
+       FwpKClnt.lib(fwpkclnt.sys)
+       FwpKClnt.lib(fwpkclnt.sys)
+       WDMSec.lib(iosddl.obj)
+       BufferOverflowFastFailK.lib(loadcfg.obj)
+       BufferOverflowFastFailK.lib(gs_report.obj)
+       BufferOverflowFastFailK.lib(gs_support.obj)
+       BufferOverflowFastFailK.lib(amdsecgs.obj)
+       WdfLdr.lib(WDFLDR.SYS)
+       WdfLdr.lib(WDFLDR.SYS)
+       WdfLdr.lib(WDFLDR.SYS)
+       WdfLdr.lib(WDFLDR.SYS)
+       WdfLdr.lib(WDFLDR.SYS)
+       WdfLdr.lib(WDFLDR.SYS)
+       WdfDriverEntry.lib(stub.obj)
+       WdfDriverEntry.lib(classbind.obj)
+       WdfDriverEntry.lib(inittypes.obj)
+  已完成传递 2
+  Failed to connect to VCTIP: 'CreateFile' failed with 2
+  Not launching VCTIP: it is flagged as unstable
+  Telemetry event upload failed: 'Failed to open connection to VCTIP'
+  sys.vcxproj -> D:\文档\windows\wfp\Capture2\x64\Debug\Capture2.sys
+  Done Adding Additional Store
+  Successfully signed: D:\\windows\wfp\Capture2\x64\Debug\Capture2.sys
+  
+  Driver is a Universal Driver.
