@@ -1,0 +1,8 @@
+
+pyuic5 -o ipruleUI.py ipruleUI.ui
+pyuic5 -o packetUI.py packetUI.ui
+
+pyuic5 -o mainUI.py mainUI.ui
+
+pause
+

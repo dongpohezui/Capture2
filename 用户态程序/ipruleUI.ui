@@ -1,0 +1,497 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>613</width>
+    <height>523</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>IP拦截</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <item>
+     <widget class="QTabWidget" name="tabWidget">
+      <property name="currentIndex">
+       <number>0</number>
+      </property>
+      <widget class="QWidget" name="tab">
+       <attribute name="title">
+        <string>查询删除规则</string>
+       </attribute>
+       <widget class="QPushButton" name="pushButton_4">
+        <property name="geometry">
+         <rect>
+          <x>90</x>
+          <y>20</y>
+          <width>131</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>黑体</family>
+          <pointsize>12</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>开启ip拦截</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pushButton_5">
+        <property name="geometry">
+         <rect>
+          <x>340</x>
+          <y>20</y>
+          <width>131</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>黑体</family>
+          <pointsize>12</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>关闭ip拦截</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pushButton_2">
+        <property name="geometry">
+         <rect>
+          <x>90</x>
+          <y>80</y>
+          <width>131</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>黑体</family>
+          <pointsize>12</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>查询规则</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pushButton_3">
+        <property name="geometry">
+         <rect>
+          <x>340</x>
+          <y>80</y>
+          <width>131</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>黑体</family>
+          <pointsize>12</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>删除规则</string>
+        </property>
+       </widget>
+       <widget class="QTableWidget" name="tableWidget">
+        <property name="geometry">
+         <rect>
+          <x>9</x>
+          <y>129</y>
+          <width>571</width>
+          <height>301</height>
+         </rect>
+        </property>
+        <column>
+         <property name="text">
+          <string>id</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>protocol</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>direction</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>srcip</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>srcipmask</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>srcport</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>srcportmask</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>dstip</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>dstipmask</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>dstport</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>dstportmask</string>
+         </property>
+        </column>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="tab_2">
+       <attribute name="title">
+        <string>增加规则</string>
+       </attribute>
+       <widget class="QLabel" name="label_5">
+        <property name="geometry">
+         <rect>
+          <x>280</x>
+          <y>140</y>
+          <width>61</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>dst ip</string>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="lineEdit_5">
+        <property name="geometry">
+         <rect>
+          <x>360</x>
+          <y>190</y>
+          <width>113</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>255.255.255.0</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_2">
+        <property name="geometry">
+         <rect>
+          <x>30</x>
+          <y>190</y>
+          <width>71</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>src ip mask</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_8">
+        <property name="geometry">
+         <rect>
+          <x>280</x>
+          <y>250</y>
+          <width>61</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>dst port</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pushButton">
+        <property name="geometry">
+         <rect>
+          <x>220</x>
+          <y>340</y>
+          <width>141</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>黑体</family>
+          <pointsize>12</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>提交</string>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="lineEdit_2">
+        <property name="geometry">
+         <rect>
+          <x>110</x>
+          <y>190</y>
+          <width>113</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>0.0.0.0</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_3">
+        <property name="geometry">
+         <rect>
+          <x>30</x>
+          <y>250</y>
+          <width>61</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>src port</string>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="lineEdit">
+        <property name="geometry">
+         <rect>
+          <x>110</x>
+          <y>140</y>
+          <width>113</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>0.0.0.0</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label">
+        <property name="geometry">
+         <rect>
+          <x>30</x>
+          <y>140</y>
+          <width>61</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>src ip</string>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="lineEdit_3">
+        <property name="geometry">
+         <rect>
+          <x>110</x>
+          <y>250</y>
+          <width>113</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>0</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_7">
+        <property name="geometry">
+         <rect>
+          <x>280</x>
+          <y>190</y>
+          <width>71</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>dst ip mask</string>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="lineEdit_4">
+        <property name="geometry">
+         <rect>
+          <x>360</x>
+          <y>140</y>
+          <width>113</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>202.115.54.0</string>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="lineEdit_6">
+        <property name="geometry">
+         <rect>
+          <x>360</x>
+          <y>250</y>
+          <width>113</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>80</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_4">
+        <property name="geometry">
+         <rect>
+          <x>30</x>
+          <y>90</y>
+          <width>61</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>protocol</string>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="lineEdit_7">
+        <property name="geometry">
+         <rect>
+          <x>110</x>
+          <y>90</y>
+          <width>113</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>6</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_6">
+        <property name="geometry">
+         <rect>
+          <x>280</x>
+          <y>90</y>
+          <width>61</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>direction</string>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="lineEdit_8">
+        <property name="geometry">
+         <rect>
+          <x>360</x>
+          <y>90</y>
+          <width>113</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>2</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_18">
+        <property name="geometry">
+         <rect>
+          <x>270</x>
+          <y>290</y>
+          <width>81</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>dst port mask</string>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="lineEdit_9">
+        <property name="geometry">
+         <rect>
+          <x>110</x>
+          <y>290</y>
+          <width>113</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>0</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_19">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>290</y>
+          <width>81</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>src port mask</string>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="lineEdit_10">
+        <property name="geometry">
+         <rect>
+          <x>360</x>
+          <y>290</y>
+          <width>113</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>65535</string>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="lineEdit_11">
+        <property name="geometry">
+         <rect>
+          <x>110</x>
+          <y>40</y>
+          <width>113</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_20">
+        <property name="geometry">
+         <rect>
+          <x>30</x>
+          <y>40</y>
+          <width>61</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>id</string>
+        </property>
+       </widget>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>613</width>
+     <height>23</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
